@@ -30,7 +30,7 @@
   position: fixed;
   top: 14%;
   bottom: 0;
-  left: 6%;
+  margin-left: -1%;
   z-index: 100;
 }
 
@@ -58,4 +58,11 @@
   .left-sidebar{
     display: none; 
   }
+}
+.gradient-img{
+  background-image: url('../images/gradient.png');
+  margin-top: -6rem;
+  border: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

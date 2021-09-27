@@ -30,7 +30,7 @@
   position: fixed;
   top: 14%;
   bottom: 0;
-  margin-left: -1%;
+  left: 6%;
   z-index: 100;
 }
 
@@ -39,6 +39,7 @@
   padding: 20px 0px 50px 54px;
   color: black;
 }
+
 .left-sidebar>ul>li>a:hover{
   color: black;
   cursor: pointer;
@@ -46,7 +47,7 @@
 .sidebar-arrow{
   transform: rotate(0deg);
   font-size: 35px;
-  padding: 30px 0px 50px 35px;
+  padding: 0px 0px 50px 35px;
 }
 .sidebar-logo{
   width: 4%;
@@ -54,15 +55,140 @@
   margin-left: 22px;
 }
 
+#side-arrow{
+  padding: 400px 0px 0px 40px;
+}
+
+.our-service-details{
+  color: #54096D;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px){
+  .valuefont {
+    text-align: center;
+  }
+  .valuefont > h1 {
+    font-size: 30px;
+  }  
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 80%;
+  }
+  .about-app{
+    text-align: center;
+  }
+  .team-member-text > h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 424px){
+  .valuefont {
+    text-align: center;
+  }
+  .valuefont > h1 {
+    font-size: 35px;
+  }  
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 80%;
+  }
+  .about-app{
+    text-align: center;
+  }
+  .team-member-text > h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px){
+  .valuefont {
+    text-align: center;
+  }
+  .valuefont > h1 {
+    font-size: 40px;
+  }  
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 80%;
+  }
+  .about-app{
+    text-align: center;
+  }
+  .team-member-text > h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .valuefont {
+    text-align: center;
+  }
+  .valuefont > h1 {
+    font-size: 50px;
+  }  
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 90%;
+  }
+  .left-sidebar>ul>li>a, .sidebar-arrow{
+    display: none; 
+  }
+  .about-app{
+    text-align: center;
+  }
+  .team-member-text > h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px){
+  .valuefont {
+    text-align: center;
+  }
+  .valuefont > h1 {
+    font-size: 40px;
+  }  
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 90%;
+  }
+  .left-sidebar>ul>li>a, .sidebar-arrow{
+    display: none; 
+  }
+}
+
+/*@media only screen and (min-width: 1024px) and (max-width: 1339px){
+  .valuefont {
+    text-align: center;
+  }
+  .valuefont > h1 {
+    font-size: 40px;
+  }  
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 90%;
+  }
+
+}*/
+@media only screen and (min-width: 1440px) and (max-width: 1550px){}
+
 @media only screen and (max-width: 768px){
   .left-sidebar{
     display: none; 
   }
-}
-.gradient-img{
-  background-image: url('../images/gradient.png');
-  margin-top: -6rem;
-  border: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
 }

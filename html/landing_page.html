@@ -6,60 +6,464 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!-- <link rel="stylesheet" type="text/css" href="../css/header.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="../css/footer.css"> -->
-    <link rel="stylesheet" type="text/css" href="../css/landing_page.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/AI.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/task.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/content.css">
+
 
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1 left-sidebar">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Twitter</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Instagram</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Linkedin</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Facebook</a>
-            </li> 
-            <li class="nav-item">
-              <i class="fal fa-long-arrow-up sidebar-arrow"></i>
-            </li>
-          </ul>
+    <!-- Header Desktop View-->
+    <header class="header">  
+      <div class="container mt-3 ai-navbar" id="navbar-hide">
+        <div class="row">
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="../images/header-logo.svg" class="img-responsive header-logo"  width="50%" height="73px" alt="header-logo">
+            </a>
+          </div>
+          <div class="col-6">
+            <ul class="nav mb-2 mb-lg-0 mt-3 justify-content-end">
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" aria-current="page" href="#">
+                  <span class='nav-link-active'>
+                    AppsImpact
+                  </span>  
+                </a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="#">Blog</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark">
+                  <i class="fa fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                  ></i>
+                </a>
+              </li>
+            </ul>            
+          </div>
         </div>
-        <div class="col-md-10 border d-flex align-items-center">
-          <div class="d-flex flex-column">
-            <h1 class="display-2">Values by Appsimpact</h1><br>
-            <p>Delivering Digital Innovation From Startups to Enterprises</p>
-            <div class="">
-              <button type="button" class="btn btn-outline-secondary text-start">
-                Get quotes 
-                <i class="fal fa-long-arrow-right ps-2"></i>
-              </button>
+      </div>
+
+      <!-- Full Screen Sidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header sidebar-navbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <a class="navbar-brand" href="#">
+                  <img src="../images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
+                </a>
+              </div>
+              <div class="col-6">
+                <ul class="nav justify-content-end nav-sidebar-font">
+                  <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="#">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="#">
+                      <span class='nav-link-active'>
+                        AppsImpact
+                      </span>  
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark nav-sidebar-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark nav-sidebar-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark nav-sidebar-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item mobile-hide">
+                    <a class="nav-link" href="#">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="d-md-flex align-items-md-end">
-            <figure class="figure">
-              <img src="../images/Group_832.svg" class="figure-img img-fluid rounded " alt="...">
-            </figure>
-            
-          </div>
         </div>
-        <div class="col-m-10 d-md-flex align-items-md-end">
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="col-md-1 d-md-flex justify-content-md-start left-sidebar logo">
+      <img src="../images/Group 1184.png" class="sidebar-logo mb-4" id="side-Logo" style="display: none;">
+      <ul class="nav flex-column position-sticky pt-5" id="sidebar-social-link">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facebook</a>
+        </li> 
+        <li class="nav-item">
+          <i class="fal fa-long-arrow-up sidebar-arrow"></i>
+        </li>
+      </ul>
+      <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="">
+        <div class="col-md-10 mx-auto">
+          <div class="row">
+            <div class="col-sm-6 valuefont">
+              <h1 class="fw-bold"><span style="color: #BF00FF;">Values</span> by apps<span>impact</span></h1>
+              <p>Delivering a Digital Innovation From Startups to Enterprises</p>
+              <a href="#" class="btn btn-outline-secondary btn-lg border-dark ">Get quotes<i class="fal fa-long-arrow-right ps-4 font-large"></i></a>
+            </div>
+            <div class="col-sm-6 pageimg">
+              <img src="../images/Group 832.svg" class="img-fluid text-center">
+            </div>
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
+
+      <div class="row about-app">
+        <div class="col-md-10 offset-md-1">
+          <h1 class="mt-5 mb-5 fw-bold">About Apps<span>impact</span> Academy</h1>
+          <b>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</b>
+          <div class="row mt-5">
+            <div class="col-md-6">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model.</p>
+            </div>
+            <div class="col-md-6">
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <i class="fal fa-long-arrow-up text-dark fa-3x ms-5 d-none d-lg-block"></i> -->
     </div>
+
+    <!-- Our Services -->
+    <div class="containet-fluid back mt-5 mb-5 our-services" style="background-color: #1b1726;">
+      <div class="container pb-5">
+        <div class="row pb-5">
+          <div class="col-md-10 offset-md-1">
+            <h1 class=" text-white text-center fw-bold mt-5">Our <span>Services</span></h1>
+            <p class="text-center text-white fw-bold">We deliver digital intelligence and expertise for your IT needs</p>
+            <div class="row mt-5 text-center gy-5">
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon01.svg" style="height: 4rem">
+                <h1 class="fw-bold"><span class="our-service-number">01</span></h1>
+                <h6 class="text-white">Technology consulting</h6>
+              </div>
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon02.svg" style="height: 4rem">
+                <h1><span class="our-service-number">02</span></h1>
+                <h6 class="text-white">UI/UX Design</h6>
+              </div>
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon03.svg" style="height: 4rem">
+                <h1><span class="our-service-number">03</span></h1>
+                <h6 class="text-white">Mobile App Development</h6>
+              </div>
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon04.svg" style="height: 4rem">
+                <h1><span class="our-service-number">04</span></h1>
+                <h6 class="text-white">Web Development</h6>
+              </div>
+            </div>
+            <div class="row mt-5 text-center">
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon05.svg" style="height: 4rem">
+                <h1><span class="our-service-number">05</span></h1>
+                <h6 class="text-white">Intillegence Solution</h6>
+              </div>
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon06.svg" style="height: 4rem">
+                <h1><span class="our-service-number">06</span></h1>
+                <h6 class="text-white">Offsore Staffing</h6>
+              </div>
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon07.svg" style="height: 4rem">
+                <h1><span class="our-service-number">07</span></h1>
+                <h6 class="text-white">Ecommerce & Marketplace</h6>
+              </div>
+              <div class="col-md-3 our-service-details">
+                <img src="../images/icon08.svg" style="height: 4rem">
+                <h1><span class="our-service-number">08</span></h1>
+                <h6 class="text-white">Digital Marketing</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <i class="fal fa-long-arrow-up text-light fa-3x ms-5 d-none d-lg-block"></i> -->
+      </div>
+    </div>
+
+    <!-- Our Notable -->
+    <div class="container mt-5">
+      <!-- <img src="images/Group 1186.svg" style="height:3rem;"> -->
+      <div class="row">
+        <div class="col-md-10 offset-md-1 header">
+          <div class="text-center mt-5">
+            <h1>Our Key <span style="color: #BF00FF">Differentiator</span></h1>
+            <p>Our client centric model helps your business unlock new value</p>
+          </div>  
+          <div class="row row-cols-md-5 text-center row-cols-1">
+            <div class="col border-start">
+              <img src="../images/team1.svg" style="height:6rem">
+              <h6 class="fw-bold mt-3 px-3 ">Resource strength</h6>
+              <small class="text-muted mt-2">Top Notch talent</small>
+              <h1 class="mt-2 fw-bold">100<sup>+</sup></h1>
+            </div>
+            <div class="col border-start">
+              <img src="../images/clients1.svg" style="height:6rem">
+              <h6 class="fw-bold mt-3 p-0">Clients Recommending</h6>
+              <small class="text-muted mt-2">Repeat Bussiness</small>
+              <h1 class="mt-2 fw-bold">80<sup>%</sup></h1>
+            </div>
+            <div class="col border-start">
+              <img src="../images/repeatbusiness1.svg" style="height:6rem">
+              <h6 class="fw-bold mt-3 px-4">Timely execution</h6>
+              <small class="text-muted mt-2">Dependable partner</small>
+              <h1 class="mt-2 fw-bold">100</h1>
+            </div>
+            <div class="col border-start">
+              <img src="../images/projects1.svg" style="height:6rem">
+              <h6 class="fw-bold mt-4 ">Projects</h6>
+              <small class="text-muted mt-5">Web & app solution</small>
+              <h1 class="mt-3 fw-bold">200<sup>+</sup></h1>
+            </div>
+            <div class="col border-start">
+              <img src="../images/global-icon.svg" style="height:6rem">
+              <h6 class="fw-bold mt-4 ">Countries</h6>
+              <small class="text-muted mt-5">Global Presence</small>
+              <h1 class="mt-3 fw-bold">4</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <i class="fal fa-long-arrow-up text-dark fa-3x ms-5 d-none d-lg-block mt-4"></i> -->
+    </div>
+
+    <div class="container mt-5">
+      <!-- <img src="images/Group 1186.svg" style="height:3rem;" class="mt-5"> -->
+      <h1 class="text-center fw-bold">Our Notable <span style="color: #BF00FF">Clients</span></h1>
+      <h6 class="text-center fw-bold"> Our client centric model helps your  business unlock new value</h6>
+      <div class="row offset-md-1 mt-5 text-center row-cols-lg-5 row-cols-md-3 row-cols-2 gy-3">
+        <div class="col border-start">
+          <img src="../images/logo-1.png" style="height: 3.75rem;" class="mt-4">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-2.png" style="height: 5.625rem;">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-3.png" style="height: 5.625rem">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-4.png" style="height: 2.5rem;" class="mt-4">
+        </div>
+        <div class="col border-start border-end">
+          <img src="../images/logo-5.png" style="height: 2.5rem;" class="mt-4">
+        </div>   
+        <div class="col border-start">
+          <img src="../images/logo-6.png" style="height: 3.75rem;" class="mt-4">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-7.png" style="height: 5.625rem">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-8.png" style="height: 2.5rem;" class="mt-4">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-9.png" style="height:4.375rem;" class="mt-2">
+        </div>
+        <div class="col border-start border-end">
+          <img src="../images/logo-10.png" style="height:3.75rem " class="mt-2">
+        </div>   
+        <div class="col border-start">
+          <img src="../images/logo-11.png" style="height: 1.875rem" class="mt-4">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-12.png" style="height: 2.5rem; " class="mt-3">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-13.png" style="height: 5.625rem;">
+        </div>
+        <div class="col border-start">
+          <img src="../images/logo-14.png" style="height: 3.75rem;" class="mt-2">
+        </div>
+        <div class="col border-start border-end">
+          <img src="../images/logo-15.png" style="height: 5rem;">
+        </div>
+      </div>   
+      <!-- <i class="fal fa-long-arrow-up text-dark fa-3x ms-5 d-none d-lg-block mt-2"></i> -->
+    </div>
+   
+    <div class="containet-fluid mt-5" style="background-color: #1b1726;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <h1 class="text-center text-white mt-5 fw-bold">Team <span style="color: #BF00FF;">Members</span></h1>
+            <h6 class="text-center text-white mt-3"> Dedicated professionals who share your vision of digital transformation</h6>
+            <div class="row text-center mt-5">
+              <div class="col-md-3">
+                <img src="../images/Mask Group 2.png" class="img-fluid" style="width: 12rem;">
+                <h5 class="text-white mt-3">Ravi kashyap</h5>
+                <small class="text-muted">Co-Founder & CEO</small>
+                <p class="text-white mt-2">Linkedin</hp>
+              </div>
+              <div class="col-md-3">
+                <img src="../images/Mask Group 3.png" class="img-fluid" style="width:12rem;">
+                <h5 class="text-white mt-3">Shreya Vishwakarma</h5>
+                <small class="text-muted">Co-Founder & CTO</small>
+                <p class="text-white mt-2">Linkedin</hp> 
+              </div>
+              <div class="col-md-3">
+                <img src="../images/Mask Group 4.png" class="img-fluid" style="width: 12rem;">
+                <h5 class="text-white mt-3">Manish Maratha</h5>
+                <small class="text-muted">VP Sales</small>
+                <p class="text-white mt-2">Linkedin</hp>
+              </div>
+              <div class="col-md-3">
+                <img src="../images/Mask Group 5.png" class="img-fluid" style="width:12rem;">
+                <h5 class="text-white mt-3">Udit Jaiswal</h5>
+                <small class="text-muted">Design Lead</small>
+                <p class="text-white mt-2">Linkedin</hp>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 offset-md-1 mt-4 team-member-text">
+            <h6 class="text-white">Work with pro team</h6>
+            <h1 class="text-white fw-bold">
+              <span style="color: #BF00FF;">Would you</span> like to have a professional <span style="color: #BF00FF;">project? Let's talk</span> about it!  
+            </h1>
+            <a href="#" class="btn btn-lg border-light text-white">Get quotes<i class="fal fa-long-arrow-right ms-3 p-2"></i></a><br>
+            <p class="mt-3"><a href="#" class="text-white"> Info@appsimpact.com</a></p>
+            <p class="text-white ms-2">or</p>
+            <p class="text-white">+919770233163</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Footer Section -->
+    <footer> 
+      <div class="container">
+        <div class="col-md-10 mt-5 offset-md-1">
+          <h6 class="fw-bold mt-3">Careers at Appsimpact</h6>
+          <h1 class="mt-4 fw-bold" style="line-height: 3.5rem;"><span style="color: #BF00FF">If you are innovative and passionate about</span> digital possibilities,we would love to work with <span style="color: #BF00FF">you</span></h1>
+          <a href="#" class="btn btn-lg border-dark">Apply Now<i class="fal fa-long-arrow-right ms-3 p-2"></i></a><br><hr class="mt-3">
+        </div>
+        
+        <hr>
+        <div class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="../images/header-logo.svg" class="footer-logo mt-3" alt="footer-logo">
+          </div>
+          <div class="col-md-5 text-md-end">
+            <ul class="list-inline social-link pe-3">
+              <span class='font-weight-bold'>Follow Us:</span>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+              <li  class="list-inline-item mr-0">  
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-tumblr"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+               <i class="fab fa-youtube"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-behance"></i>
+              </li> 
+            </ul>  
+            <div class='pe-5 me-3'>
+              <div class='text-justify'>
+                <span class="footer-contact">Say Hello:</span>
+                <span class="footer-contact-text">info@appsimpact.com<br>
+                  <spam class="">Ph: +0731 800 578 1250</spam><br>
+                  <spam class="">Ph: +0731 800 578 1250</spam>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 font-weight-bold">
+        <div class="row">
+          <div class="col-md-1 text-center">
+            <!-- <i class="fal fa-long-arrow-up footer-long-arrow fs-2"></i> -->
+          </div> 
+          <div class="col-md-6">
+            <ul class="list-inline footer-page-link">
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">About Us</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Careers</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md-5">
+            <ul class="list-inline">
+              <li class="list-inline-imte footer-rights">
+                <span>
+                  © 2021 AppsImpact Technologies - All rights Reserved
+                </span>  
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </footer> 
   </body>
 
 
   <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/popper.min.js"></script>
+  <script type="text/javascript">
+    // Sidebar logo
+    var mySidebarLogo = document.getElementById("side-Logo");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mySidebarLogo.style.display = "block";
+      } else {
+        mySidebarLogo.style.display = "none";
+      }
+    }
+  </script>
 </html>

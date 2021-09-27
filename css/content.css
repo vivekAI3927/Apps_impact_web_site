@@ -149,6 +149,9 @@
   .team-member-text > h1 {
     font-size: 30px;
   }
+  #side-Logo{
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1023px){
   .valuefont {

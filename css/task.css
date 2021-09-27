@@ -1,0 +1,101 @@
+.footer{
+	height: auto;
+	width: 100%;
+	background-color: red;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+.row iframe{
+	height: 130px;
+	width: 100%;
+}
+
+.cardback h2{
+	padding-top: 220px;
+}
+.cardback img{
+	height: 450px;
+	width: 100%;
+	opacity: 0.4;
+}
+.fa-twitter, .fa-facebook-f, .fa-bookmark {
+	color: gray;
+}
+
+.fa-twitter:hover{
+	color: red;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+.fa-facebook-f:hover{
+	color: red;
+	font-size: 20px;
+	cursor: pointer;
+
+}
+.fa-bookmark:hover{
+	color: red;
+	font-size: 20px;
+	cursor: pointer;
+}
+.blogbutton{
+	color: grey;
+}
+.blogbutton:hover{
+   color: white;
+   background-color: red;
+}
+.contact h1{
+	padding-top: 290px;
+	color: white;
+}
+.contact{
+	background-image: url(../images/rails.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 400px;
+	width: 100%;
+}
+ .border-secondary{
+ 	border-color: #6900c7 !important;
+ }
+ .fa-tv,.fa-user-circle,.fa-life-ring {
+ 	color: blue;
+ }
+ .text-secondary{
+ 	color: #6900c7 !important;;
+ }
+ .fa-user-circle:before {
+ 	font-size: 2.0rem;
+ 	background-color: #dae7fb;
+ 	padding: 18px;
+ 	border-radius: 35px;
+ }
+ .fa-life-ring:before{
+ font-size: 2.0rem;
+ background-color: #e3ddfa;
+ padding: 18px;
+ border-radius: 35px;
+ }
+ .fa-tv:before{
+ 	font-size: 2.0rem;
+ 	background-color:#daefed;
+ 	padding: 18px;
+ 	border-radius: 35px;
+ }
+ .border-top-md{
+ 	border-top-width: 0.25rem;
+ }
+ .border-top-md:hover{
+ 	box-shadow:-2px -2px -5px -5px black;
+ 	transform: scale(1.1);
+ }
+  .border-top-md{
+  	transition: all 0.25s ease;
+  }
+  

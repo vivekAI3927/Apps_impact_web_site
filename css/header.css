@@ -52,6 +52,11 @@
     margin-top: 11px !important;
     padding: 10px !important;
   }
+  .nav-sidebar-link{
+    padding: 30px 55px 0px 0px;
+    font-size: 30px;
+    overflow-x: scroll;
+  }
   .fa-bars{
     font-size: 25px;
   }
@@ -75,8 +80,13 @@
   .fa-bars{
     font-size: 24px;
   }
-  .sidebar-navbar .nav-link {
+  .sidebar-navbar {
     padding: .5rem 2rem;
+  }
+  .nav-sidebar-link{
+    padding: 30px 115px 0px 0px;
+    font-size: 30px;
+    display: block;
   }
   .nav{
     margin-top: 1rem;
@@ -98,8 +108,12 @@
   .nav-sidebar-font{
     margin-right: -32px;
   }
-  .sidebar-navbar .nav-link {
+  .sidebar-navbar{
     padding: .5rem 2rem;
+  }
+  .nav-sidebar-link{
+    padding: 30px 130px 0px 0px;
+    font-size: 30px;
   }
   .nav{
     margin-top: 1rem;
@@ -118,12 +132,16 @@
     width: 240px;
     margin-left: -15px;
   }
-  .sidebar-navbar .nav-link {
+  .sidebar-navbar {
     padding: .5rem 4rem;
   }
   .nav-sidebar-font{
     font-size: 26px;
     margin-right: -60px;
+  }
+  .nav-sidebar-link{
+    padding: 30px 250px 0px 0px;
+    font-size: 40px;
   }
   .nav{
     margin-top: 1rem;

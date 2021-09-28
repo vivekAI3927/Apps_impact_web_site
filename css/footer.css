@@ -37,8 +37,10 @@
     height: 25px;
   }
   .social-link{
-    display: flex;
     padding-top: 40px;
+  }
+  .social-link > span {
+    display: block;
   }
   .footer-contact{
     display: flex;
@@ -79,8 +81,10 @@
     height: 25px;
   }
   .social-link{
-    display: flex;
     padding-top: 40px;
+  }
+  .social-link > span {
+    display: block;
   }
   .footer-contact{
     display: flex;
@@ -121,8 +125,10 @@
     height: 25px;
   }
   .social-link{
-    display: flex;
     padding-top: 40px;
+  }
+  .social-link {
+    padding-right: 50px !important;
   }
   .footer-contact{
     display: flex;
@@ -155,7 +161,6 @@
   .fa-linkedin-in, .fa-facebook-f, .fa-tumblr, .fa-behance, .fa-youtube, .fa-instagram{
     background: black;
     color: white;
-    /* font-size: 14px !important; */
     border-radius: 8px;
     padding: 5px;
     margin: 0px;
@@ -164,6 +169,7 @@
   }
   .social-link{
     padding-top: 4px;
+    font-size: 11px;
   }
   .footer-contact{
     font-size: 14px;

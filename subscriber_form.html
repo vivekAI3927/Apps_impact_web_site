@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AI Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/AI.css">
+    <link rel="stylesheet" type="text/css" href="./css/subscriber.css">
+
+  </head>
+  <body>
+    <!-- Subscriber Form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h5 class="fw-bold text-center">Subscribe blogs for latest updates</h5>
+          <h1 class="fw-bold mt-3"><span style="color: #BF00FF;">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 mx-md-auto">
+          <form class="row">
+            <div class="col-12 col-md-8 col-lg-9 field-input">
+              <span>Email address</span>
+              <i class="fal fa-paper-plane"></i>
+              <input type="email" class="form-control" placeholder="hello@company.com">
+            </div>
+            <div class="col-12 text-center col-md-4 col-lg-3 mt-3 mt-md-0">
+              <button type="submit" class="btn btn-outline-secondary mt-4 form-btn">
+                <span class="pe-2">Subscribe Now</span> <i class="fal fa-long-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container">
+            <div class="row height d-flex justify-content-center align-items-center">
+              <div class="col-md-8">
+                <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Have a question? Ask Now"> <button class="btn btn-primary">Search</button> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+  <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript">
+    // Sidebar logo
+    var mySidebarLogo = document.getElementById("side-Logo");
+    var myTopButton = document.getElementById("right-side-arrow");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mySidebarLogo.style.display = "block";
+        myTopButton.style.display = "block";
+      } else {
+        myTopButton.style.display = "none";
+        mySidebarLogo.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</html>

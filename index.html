@@ -11,12 +11,16 @@
     <link rel="stylesheet" type="text/css" href="./css/AI.css">
     <link rel="stylesheet" type="text/css" href="./css/content.css">
 
-
   </head>
   <body>
+
+    <div>
+      <img src="./images/gradient.png" class="gradient-img" >
+    </div>
+
     <!-- Header Desktop View-->
     <header class="header">  
-    <div class="container mt-3 ai-navbar" id="navbar-hide">
+      <div class="container mt-3 ai-navbar" id="navbar-hide">
         <div class="row">
           <div class="col-6">
             <a class="navbar-brand" href="#">
@@ -33,7 +37,7 @@
                 </a>
               </li>
               <li class="nav-item mobile-hide">
-                <a class="nav-link text-dark" href="#">Portfolio</a>
+                <a class="nav-link text-dark" href="/portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item mobile-hide">
                 <a class="nav-link text-dark" href="#">Blog</a>
@@ -119,19 +123,15 @@
         </li>
       </ul>
       <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>     
-      <i class="fal fa-long-arrow-up" id="right-side-arrow" onclick="topFunction()" style="position: fixed;
-    right: 3%;
-    font-size: 35px;
-    bottom: 25px;"></i>
-    </div>
+      <i class="fal fa-long-arrow-up" id="right-arrow" onclick="topFunction()" style="display: none;"></i>
+    </div> 
 
     <!-- Main Content -->
     <div class="container">
-      <div class="">
         <div class="col-md-10 mx-auto">
           <div class="row">
             <div class="col-sm-6 valuefont order-2 order-md-1">
-              <h1 class="fw-bold"><span style="color: #BF00FF;">Values</span> by apps<span>impact</span></h1>
+              <h1 class="fw-bold"><span style="color: #BF00FF;">Values</span> by apps<span style="color: #BF00FF;">impact</span></h1>
               <p>Delivering a Digital Innovation From Startups to Enterprises</p>
               <a href="#" class="btn btn-outline-secondary btn-lg border-dark ">Get quotes<i class="fal fa-long-arrow-right ps-4 font-large"></i></a>
             </div>
@@ -141,7 +141,6 @@
           </div>
         </div>
         <div class="col-md-1"></div>
-      </div>
 
       <div class="row about-app">
         <div class="col-md-10 offset-md-1">
@@ -368,13 +367,12 @@
           <h1 class="mt-4 fw-bold" style="line-height: 3.5rem;">
             <span style="color: #BF00FF">If you are innovative and passionate about</span> digital possibilities,we would love to work with <span style="color: #BF00FF">you</span>
           </h1>
-          <a href="#" class="btn btn-lg border-dark">Apply Now
+          <a href="#" class="btn border-dark">Apply Now
             <i class="fal fa-long-arrow-right ms-3 p-2"></i>
           </a>
           <br>
         </div>
-        
-        <hr class="mt-3">
+        <hr class="mx-auto footer-hr">        
         <div class="row no-gutters">
           <div class="col-md-1"></div>
           <div class="col-md-5">
@@ -455,7 +453,8 @@
   <script type="text/javascript">
     // Sidebar logo
     var mySidebarLogo = document.getElementById("side-Logo");
-    var myTopButton = document.getElementById("right-side-arrow");
+    var myTopButton = document.getElementById("right-arrow");
+    var mySidebatLinks = document.getElementById("sidebar-social-link");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
@@ -464,9 +463,11 @@
       if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         mySidebarLogo.style.display = "block";
         myTopButton.style.display = "block";
+        mySidebatLinks.style.display = "none";
       } else {
         myTopButton.style.display = "none";
         mySidebarLogo.style.display = "none";
+        mySidebatLinks.style.display = "block";
       }
     }
 

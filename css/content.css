@@ -33,17 +33,25 @@
   left: 6%;
   z-index: 100;
 }
-  .gradient-img{
-    background-image: url('/images/gradient.png');
-    margin-top: -6rem;
-    border: 0;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+
+.gradient-img{
+  width: 91%;
+  height: 500px;
+}
+
+.gradient-img{
+  position: absolute;
+  top: 0px;
+  left: 6%;
+  border: 0;
+  z-index: -10;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .left-sidebar>ul>li>a{
   transform: rotate(-90deg);
-  padding: 20px 0px 50px 54px;
+  padding: 20px 0px 50px 48px;
   color: black;
 }
 
@@ -68,6 +76,20 @@
 
 .our-service-details{
   color: #54096D;
+}
+
+.bg-voilet{
+  background-color: #BF00FF;
+  color: white;
+}
+.bg-voilet:hover{
+  background-color: #BF00FF;
+}
+#right-arrow{
+  position: fixed;
+  left: 9%;
+  font-size: 35px;
+  bottom: 25px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px){

@@ -2,10 +2,9 @@ input::placeholder {
   color: red;
   padding-left: 20px;
   font-size: 12px;
+  margin-left: 15px;
 }
-.field-input  input{
-  height: 50px;
-}
+
 .field-input{
   position: relative;
 }
@@ -15,8 +14,16 @@ input::placeholder {
   z-index: 1;
   left: 200px;
 }
+.field-input > i {
+  position: absolute;
+  top: 56%;
+  left: 4%;
+}
 
 
+
+
+/*
 .height {
     height: 100vh
 }
@@ -50,4 +57,4 @@ input::placeholder {
     height: 50px;
     width: 110px;
     background: blue
-}
+}*/

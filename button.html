@@ -9,33 +9,38 @@
     <link rel="stylesheet" type="text/css" href="./css/header.css">
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/AI.css">
-    <link rel="stylesheet" type="text/css" href="./css/subscriber.css">
+    <link rel="stylesheet" type="text/css" href="./css/content.css">
+
+    <style type="text/css">
+    .button-hover{
+      color: black;
+    }
+    .button-hover:hover {
+      background-color: #BF00FF;
+      color: white;
+      border: 2px solid #BF00FF;
+      padding-left: 25px;
+    }
+    .button-hover:visisted{
+      border-color: #BF00FF;
+    }
+
+    .button-hover:hover > i {
+      visibility: hidden;
+    }    
+
+    .button-hover:hover > .button-text {  
+    padding-left: 40px;
+    }
+
+
+    </style>
 
   </head>
-  <body>
-    <!-- Subscriber Form -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 mx-auto">
-          <h5 class="fw-bold text-center">Subscribe blogs for latest updates</h5>
-          <h1 class="fw-bold mt-3"><span style="color: #BF00FF;">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
-        </div>
-        <div class="col-md-10 col-lg-8 mx-md-auto">
-          <form class="row">
-            <div class="col-12 col-md-8 col-lg-9 field-input">
-              <span>Email address</span>
-              <i class="fal fa-paper-plane"></i>
-              <input type="email" class="form-control" placeholder="hello@company.com">
-            </div>
-            <div class="col-12 text-center col-md-4 col-lg-3 mt-3 mt-md-0">
-              <button type="submit" class="btn btn-outline-secondary mt-4 form-btn">
-                <span class="pe-2">Subscribe Now</span> <i class="fal fa-long-arrow-right"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+  <body class="m-5 ">
+    <a href="#" class="btn border text-decoration-none button-hover ps-2 text-center">
+      <span class="button-text">Get quote</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+    </a>
   </body>
 
 
@@ -45,7 +50,8 @@
   <script type="text/javascript">
     // Sidebar logo
     var mySidebarLogo = document.getElementById("side-Logo");
-    var myTopButton = document.getElementById("right-side-arrow");
+    var myTopButton = document.getElementById("right-arrow");
+    var mySidebatLinks = document.getElementById("sidebar-social-link");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
@@ -54,9 +60,11 @@
       if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         mySidebarLogo.style.display = "block";
         myTopButton.style.display = "block";
+        mySidebatLinks.style.display = "none";
       } else {
         myTopButton.style.display = "none";
         mySidebarLogo.style.display = "none";
+        mySidebatLinks.style.display = "block";
       }
     }
 

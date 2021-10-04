@@ -98,7 +98,7 @@
 }
 
 .team-member-text {
-  padding: 120px 0px 50px 0px;
+  padding: 220px 0px 50px 0px;
 }
 
 .team-member-text > h1 {
@@ -162,29 +162,96 @@ margin-top: 14%;
 .aboutus-possibility{
   margin-top: 15%;
 }
-
-/* Subscriber Form */
-input::placeholder {
-  color: red;
-  padding-left: 20px;
-  font-size: 12px;
-  margin-left: 15px;
-}
-
-.field-input{
+.port-cards{
   position: relative;
 }
-.field-input .field-icon{
+.bg-card-img{
   position: absolute;
-  bottom: 44px;
-  z-index: 1;
-  left: 200px;
+  z-index: -1;
+  top: 160rem;
 }
-.field-input > i {
+.portfolio-card-btn{
+  background-color: #BF00FF;
+}
+.card-margin{
+  margin-top: -120px;
+}
+.image-card > .card{
+  width: 45rem;
+  border-radius: 25px;
+  border: none;
+  height: 22rem;
+}
+.blog-image{
+  position: relative;
+}
+
+.top-image-card > .card{
+  border-radius: 20px;
+  height: 350px;
+}
+
+.top-image-card, .card-body {
+  width: 100%;
+}
+
+.top-image-card{
   position: absolute;
-  top: 41%;
-  left: 4%;
+  top: 120px;
+  width: 50%;
+  right: 100px;
 }
+
+.image-card, .blog-card-sub-title {
+  font-size: 34px;
+  padding-top: 10px;
+}
+.image-card, .blog-card-txt{
+  font-size: 14px;
+  padding-top: 12px;
+}
+
+.image-card{
+  position: absolute;
+  right: 80px;
+  top: 110px;
+}
+
+.posts-image{
+  position: relative;
+}
+
+.blog-card{
+  position: relative;
+  bottom: 140px;
+  left: 18px;
+}
+
+.card-avatar {
+  width: 30px;
+}
+
+.blog-card{
+  border-radius: 15px;
+  border: none;
+  width: 27rem;
+}
+
+.blog-card-button{
+  position: absolute;
+  bottom: 10px;
+  width: 75%;
+  left: 30%;
+}
+
+.blog-card-image{
+  position: relative;
+  z-index: -1;
+  bottom: 403px;
+}
+  .blog-posts-cards {
+    margin-top: 140px;
+  }
 
 @media only screen and (min-width: 320px) and (max-width: 374px){
   .valuefont {
@@ -233,11 +300,99 @@ input::placeholder {
   .team-members{
     padding-top: 40px;
   }
+
   .portfolio-top-header h1{
     margin-top: 16%;
     text-align: center;
   }
 
+  .card-margin{
+    margin-top: -200px;
+  }
+
+  .image-card > .card{
+    width: 17.5rem;
+    border-radius: 25px;
+    border: none;
+    height: 19rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+  .top-image-card > .card{
+  border-radius: 20px;
+  height: 270px;
+}
+
+.top-image-card{
+  text-align: center;
+}
+
+.top-image-card{
+  position: absolute;
+  top: 190px;
+  width: 95%;
+  right: 8px;
+}
+
+  .image-card{
+    margin-top: 55px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .posts-image{
+    position: relative;
+  }
+
+  .blog-card{
+    position: relative;
+    bottom: 140px;
+    left: 4px;
+  }
+
+  .blog-card{
+    border-radius: 15px;
+    border: none;
+    width: 18rem;
+  }
+  .card-avatar {
+    width: 60px;
+  }
+  .blog-card{
+    margin-top: 150px;
+  }
+  .posts-image{
+    margin-top: 100px;
+  }
+  .blog-card , .card-title {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .blog-card-button{
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    left: 10%;
+  }
+  .blog-card-buttom-btn, .blog-card-image{
+    display: none;
+  }
+  .blog-posts-cards {
+    margin-top: 315px;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
@@ -277,6 +432,116 @@ input::placeholder {
   .portfolio-top-header h1{
     margin-top: 30%;
     text-align: center;
+  }
+
+  .image-card > .card{
+    width: 21rem;
+    border-radius: 25px;
+    border: none;
+    height: 18rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+
+  .top-image-card > .card{
+    border-radius: 20px;
+    height: 270px;
+  }
+
+  .top-image-card{
+    text-align: center;
+  }
+
+  .top-image-card{
+    position: absolute;
+    top: 224px;
+    width: 95%;
+    right: 8px;
+  }
+
+  .image-card{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+
+  .card-margin{
+    margin-top: -190px;
+  }
+
+  .image-card > .card{
+    width: 120rem;
+    border-radius: 25px;
+    border: none;
+    height: 19rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    margin-top: 55px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .posts-image{
+    position: relative;
+  }
+
+  .blog-card{
+    position: relative;
+    bottom: 140px;
+    left: 4px;
+  }
+
+  .blog-card{
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    width: 22rem;
+  }
+  .card-avatar {
+    width: 60px;
+  }
+  .blog-card{
+    margin-top: 150px;
+  }
+  .posts-image{
+    margin-top: 100px;
+  }
+  .blog-card , .card-title {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .blog-card-button{
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    left: 10%;
   }
 
 }
@@ -320,6 +585,117 @@ input::placeholder {
     text-align: center;
   }
 
+  .image-card > .card{
+    width: 24rem;
+    border-radius: 25px;
+    border: none;
+    height: 17rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+
+  .top-image-card > .card{
+    border-radius: 20px;
+    height: 270px;
+  }
+
+  .top-image-card{
+    text-align: center;
+  }
+
+  .top-image-card{
+    position: absolute;
+    top: 250px;
+    width: 95%;
+    right: 8px;
+  }
+
+  .image-card{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+
+
+  .card-margin{
+    margin-top: -190px;
+  }
+
+  .image-card > .card{
+    width: 120rem;
+    border-radius: 25px;
+    border: none;
+    height: 19rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    margin-top: 55px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .posts-image{
+    position: relative;
+  }
+
+  .blog-card{
+    position: relative;
+    bottom: 140px;
+    left: 4px;
+  }
+
+  .blog-card{
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    width: 22rem;
+  }
+  .card-avatar {
+    width: 60px;
+  }
+  .blog-card{
+    margin-top: 150px;
+  }
+  .posts-image{
+    margin-top: 100px;
+  }
+  .blog-card , .card-title {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .blog-card-button{
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    left: 10%;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -347,7 +723,7 @@ input::placeholder {
     text-align: center;
   }
   .team-member-text {
-    padding: 60px 0px 50px 10px;
+    padding: 130px 0px 50px 10px;
   }
   .team-member-text > h1 {
     font-size: 30px;
@@ -369,6 +745,117 @@ input::placeholder {
   .portfolio-top-header h1{
     margin-top: 30%;
     text-align: center;
+  }
+
+  .image-card > .card{
+    width: 34.8rem;
+    border-radius: 25px;
+    border: none;
+    height: 15rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+
+  .top-image-card > .card{
+    border-radius: 20px;
+    height: 270px;
+  }
+
+  .top-image-card{
+    text-align: center;
+  }
+
+  .top-image-card{
+    position: absolute;
+    top: 339px;
+    width: 75%;
+    right: 96px;
+  }
+  .image-card{
+    position: absolute;
+    right: 105px;
+    top: 120px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .card-margin{
+    margin-top: -190px;
+  }
+
+  .image-card > .card{
+    width: 120rem;
+    border-radius: 25px;
+    border: none;
+    height: 19rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    margin-top: 55px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .posts-image{
+    position: relative;
+  }
+
+  .blog-card{
+    position: relative;
+    bottom: 140px;
+    left: 4px;
+  }
+
+  .blog-card{
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    width: 16rem;
+  }
+  .card-avatar {
+    width: 40px;
+  }
+  .blog-card{
+    margin-top: 150px;
+  }
+  .posts-image{
+    margin-top: 100px;
+  }
+  .blog-card , .card-title {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .blog-card-button{
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    left: 10%;
+  }
+  .blog-card-button > a {
+    font-size: 12px;
   }
 
 }
@@ -406,27 +893,97 @@ input::placeholder {
     text-align: center;
   }
 
+  .image-card > .card{
+    width: 34.8rem;
+    border-radius: 25px;
+    border: none;
+    height: 18rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    position: absolute;
+    right: 85px;
+    top: 120px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+
+
 }
 
-/*@media only screen and (min-width: 1024px) and (max-width: 1339px){
-  .valuefont {
-    text-align: center;
-  }
-  .valuefont > h1 {
-    font-size: 40px;
-  }  
-  .valuefont > p {
-    font-size: 12px;
-  }
-  .pageimg > img {
-    width: 100%;
-    height: 90%;
+@media only screen and (min-width: 1024px) and (max-width: 1339px){
+  .image-card > .card{
+    width: 36rem;
+    border-radius: 25px;
+    border: none;
+    height: 20rem;
   }
 
-}*/
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    position: absolute;
+    right: 136px;
+    top: 90px;
+  }
+  .image-card > .card-body {
+    width: 34.5rem;
+  }
+  .image-card, .blog-card-sub-title {
+    font-size: 29px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+    font-size: 14px;
+  }
+  .blog-card{
+    border-radius: 15px;
+    border: none;
+    width: 26rem;
+  }
+
+
+}
 @media only screen and (min-width: 1440px) and (max-width: 1550px){
   .portfolio-top-header h1{
     margin-top: 30%;
+  }
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    position: absolute;
+    right: 136px;
+    top: 90px;
+  }
+  .image-card > .card-body {
+    width: 34.5rem;
+  }
+  .image-card, .blog-card-sub-title {
+    font-size: 29px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+    font-size: 14px;
+  }
+  .blog-card{
+    border-radius: 15px;
+    border: none;
+    width: 26rem;
   }
 
 }
@@ -454,6 +1011,7 @@ input::placeholder {
 
 .button-hover:hover > i {
   visibility: hidden;
+  display: none;
   border: none;
   outline: none;
 }    
@@ -468,4 +1026,10 @@ input::placeholder {
 /* Common Heading Selected Text */
 .heading-text{
   color: #BF00FF;
+}
+.team-img{
+ position: relative;
+ /*bottom: 321px;*/
+ top: -323px;
+ z-index: -1;
 }

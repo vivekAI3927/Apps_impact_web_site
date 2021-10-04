@@ -20,6 +20,13 @@ input::placeholder {
   left: 4%;
 }
 
+.button-hover:hover > i {
+  visibility: hidden;
+  display: none;
+  border: none;
+  outline: none;
+  text-align: center;
+}    
 
 
 

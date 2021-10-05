@@ -1,3 +1,9 @@
+body{
+  overflow: visible !important;
+  overflow: scroll !important;
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+}
 .offcanvas-end{
   width: 100% !important;
   background: white;
@@ -43,6 +49,10 @@
     width: 150px;
     margin-left: -15px;
   }
+  .nav-sidebar-font{
+    margin-left: -100px;
+    padding: 0px 15px 0px 15px;
+  }
   .sidebar-close-btn{
     margin-top: 1rem !mportant;
   }
@@ -75,7 +85,7 @@
     margin-left: -15px;
   }
   .nav-sidebar-font{
-    margin-right: -32px;
+    margin-left: -100px;
   }
   .fa-bars{
     font-size: 24px;
@@ -106,7 +116,8 @@
     margin-left: -15px;
   }
   .nav-sidebar-font{
-    margin-right: -32px;
+    margin-left: -100px;
+    padding: 0px 15px 0px 15px;
   }
   .sidebar-navbar{
     padding: .5rem 2rem;
@@ -137,7 +148,7 @@
   }
   .nav-sidebar-font{
     font-size: 26px;
-    margin-right: -60px;
+    margin-left: -85px;
   }
   .nav-sidebar-link{
     padding: 30px 250px 0px 0px;

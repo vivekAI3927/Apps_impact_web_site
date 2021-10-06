@@ -65,16 +65,16 @@ h2{
   font-family: Poppins ExtraBold;
   font-weight: 1000;
 }
-h5, .footer-contact-text, .footer-font-medium{
+h5, .footer-contact-text, .footer-font-medium, .poppins-medium{
   font-family: Poppins Medium;
 }
-h6, .footer-font-semiBold{
+h6, .footer-font-semiBold, .poppins-semibolds{
   font-family: Poppins SemiBold;
   font-weight: 1000;
 }
 .poppins-light-font{
   font-family: Poppins Light;
 }
-.poppins-regular-font{
+.poppins-regular-font, .poppins-regular{
   font-family: Poppins Regular;
 }

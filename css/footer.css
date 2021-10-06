@@ -136,6 +136,9 @@
   .social-link {
     padding-right: 50px !important;
   }
+  .social-link > span {
+    display: block;
+  }
   .footer-contact{
     display: flex;
     font-size: 14px;

@@ -14,12 +14,6 @@ input::placeholder {
   z-index: 1;
   left: 200px;
 }
-.field-input > i {
-  position: absolute;
-  top: 56%;
-  left: 4%;
-}
-
 .button-hover:hover > i {
   visibility: hidden;
   display: none;
@@ -27,7 +21,24 @@ input::placeholder {
   outline: none;
   text-align: center;
 }    
+.plan-form-field{
+  position: absolute;
+  top: 45%;
+  left: 2%;
+}
+.btn-border-buttom{
+  border-top: 2px solid gray;
+  border-right: 2px solid gray;
+  border-bottom: 1px solid black;
+  border-left: 2px solid gray;
+}
 
+.text-white-button{
+  color: black;
+}
+.input-field-text{
+  font-size: 0.8rem;
+}
 
 
 /*

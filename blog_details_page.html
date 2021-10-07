@@ -15,15 +15,130 @@
 
   </head>
   <body>
-    <div class="container-fluid">
-      <img src="./images/blog-details-gradient-bg.png" class="img-fluid blog-detail-bg-image">
-      <div class="container">
+
+    <!-- Header Desktop View-->
+    <header class="header">  
+      <div class="container mt-3 ai-navbar" id="navbar-hide">
         <div class="row">
-          <div class="col-md-8 mx-auto blog-detail-header-image">
-            <h1 class="mt-3 mb-2">Featured <span class="heading-text">Blogs</span></h1>
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="./images/header-logo.svg" class="img-responsive header-logo"  width="50%" height="73px" alt="header-logo">
+            </a>
+          </div>
+          <div class="col-6">
+            <ul class="nav mb-2 mb-lg-0 mt-3 justify-content-end">
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" aria-current="page" href="index.html">
+                  <span class='nav-link-active'>
+                    AppsImpact
+                  </span>  
+                </a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="blogs.html">Blog</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark">
+                  <i class="fa fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                  ></i>
+                </a>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Screen Sidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div style="height: 5000px; overflow: auto;">
+          
+          <div class="offcanvas-header sidebar-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a class="navbar-brand" href="#">
+                    <img src="./images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <ul class="nav justify-content-end d-lg-none">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </ul>
+                    <ul class="nav justify-content-lg-end nav-sidebar-font">
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="index.html">
+                        <span class='nav-link-active'>
+                          AppsImpact
+                        </span>  
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mobile-hide">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="col-md-1 d-md-flex justify-content-md-start left-sidebar logo">
+      <img src="./images/Group 1184.png" class="sidebar-logo mb-4" id="side-Logo" style="display: none;">
+      <ul class="nav flex-column position-sticky pt-5" id="sidebar-social-link">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facebook</a>
+        </li> 
+        <li class="nav-item">
+          <i class="fal fa-long-arrow-up sidebar-arrow"></i>
+        </li>
+      </ul>
+      <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>     
+      <i class="fal fa-long-arrow-up" id="right-arrow" onclick="topFunction()" style="display: none;"></i>
+    </div> 
+
+
+    <div class="container-fluid g-0">
+      <img src="./images/blog-details-gradient-bg.png" class="img-fluid blog-detail-bg-image">
+      <div class="container g-0">
+        <div class="row ms-0 me-0">
+          <div class="col-md-10 mx-auto blog-detail-header-image">
+            <h2 class="mt-3 mb-2">Featured <span class="heading-text">Blogs</span></h2>
             <img src="./images/blog-details-top-img.png" class="img-fluid">
           </div>
-          <div class="col-md-6 mx-auto">         
+          <div class="col-md-8 mx-auto">         
             <div class="card blog-detail-card">
               <div class="card-body p-md-3">
                 <div class="d-md-flex bd-highlight">
@@ -31,12 +146,12 @@
                     <img src="./images/Countries.svg" class="pt-md-2 blog-detail-avatar" alt="Post Card">
                   </div>
                   <div class="mt-2 mt-md-0 ms-md-2 bd-highlight">
-                    <h6>Jhon Due</h6>
+                    <h5 class="fs-6">Jhon Due</h5>
                     <span class="text-muted">
                     May 21, 2021</span>
                   </div>
                   <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight blog-social-icons-bg">
-                    <span>Share : 
+                    <span class="poppins-semibolds">Share : 
                       <i class="fab fa-linkedin-in text-white blog-social-li-icon"></i>
                       <i class="fab fa-facebook-f text-white blog-social-fb-icon"></i>
                       <i class="fab fa-tumblr text-white" style="background-color: #1DA1F2"></i>
@@ -44,17 +159,17 @@
                   </div>
                 </div>
                 <h2 class="card-title text-start mt-3 blog-detail-card-title">AR/VR Technology Online Information Session</h2>
-                <p class="card-text">On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <p class="card-text poppins-regular">On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <img src="./images/Mask Group 11.png" class="img-fluid" alt="card-blog-images">
-                <p class="mt-3">
+                <p class="mt-3 poppins-regular">
                   On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
                 <img src="./images/Mask Group 12.png" class="img-fluid" alt="card-blog-images">
-                <h6 class="mt-3 fw-bolder">
+                <h4 class="mt-3 fs-5">
                   We Can't Help But Fall In Love With HubSpot.
-                </h6>
-                <p class="mt-3">
+                </h4>
+                <p class="mt-3 poppins-regular">
                   On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <hr class="fw-bold">
@@ -70,110 +185,210 @@
           </div>
         </div>
       </div>
-      <div>
-        <div class="container g-0">
-          <div class="row g-0">
-            <div class="col-md-10 mx-md-auto">
-              <h1 class="ms-2">Related <span class="heading-text">blog</span></h1>
-              <div class="row mt-5 m-0">
-                <div class="col-md-6">
-                  <img src="./images/Mask Group 9.png" class="img-fluid blog-posts-image" alt="blog-post">
-                  <div class="card blog-card">
-                    <div class="card-body p-md-3">
-                      <div class="d-md-flex bd-highlight">
-                        <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
-                        </div>
-                        <div class="p-2 bd-highlight">
-                          <strong>Jhon Due</strong>
-                          <span class="text-muted">May 21, 2021</span>
-                        </div>
-                        <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                          <span>Share : 
-                            <i class="fab fa-linkedin-in text-white blog-social-li-icon"></i>
-                            <i class="fab fa-facebook-f text-white blog-social-fb-icon"></i>
-                            <i class="fab fa-tumblr text-white" style="background-color: #1DA1F2"></i>
-                          </span>
-                        </div>
+
+      <div class="container g-0">
+        <div class="row g-0">
+          <div class="col-md-10 mx-md-auto">
+            <h2 class="ms-2">Related <span class="heading-text">blog</span></h2>
+            <div class="row g-0 mt-5 m-0">
+              <div class="col-md-6">
+                <img src="./images/Mask Group 9.png" class="img-fluid blog-posts-image" alt="blog-post">
+                <div class="card blog-card">
+                  <div class="card-body p-md-3">
+                    <div class="d-md-flex bd-highlight">
+                      <div class="bd-highlight">
+                        <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
                       </div>
-                      <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                      <p class="card-text p-md-2">
-                        <span>Lorem ipsum, or lipsum as it is sometimes </span>
-                        <span>known, is dummy text used in laying out print,</span>
-                        <span>
-                          graphic or web designs. The passage is
+                      <div class="p-2 bd-highlight">
+                        <strong class="poppins-semibolds">Jhon Due</strong>
+                        <span class="text-muted">May 21, 2021</span>
+                      </div>
+                      <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
+                        <span class="poppins-medium">Share : 
+                          <i class="fab fa-linkedin-in text-white blog-social-li-icon"></i>
+                          <i class="fab fa-facebook-f text-white blog-social-fb-icon"></i>
+                          <i class="fab fa-tumblr text-white" style="background-color: #1DA1F2"></i>
                         </span>
-                        <span>
-                          attributed to an unknown typesetter in the 15th century who is thought to have.
-                        </span>
-                      </p>
-                      <div class="blog-card-button">
-                        <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
-                          Read More <i class="fal fa-long-arrow-right"></i>
-                        </a>
-                      </div>  
+                      </div>
                     </div>
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
+                      <span>Lorem ipsum, or lipsum as it is sometimes </span>
+                      <span>known, is dummy text used in laying out print,</span>
+                      <span>
+                        graphic or web designs. The passage is
+                      </span>
+                      <span>
+                        attributed to an unknown typesetter in the 15th century who is thought to have.
+                      </span>
+                    </p>
+                    <div class="blog-card-button poppins-semibolds">
+                      <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
+                        Read More <i class="fal fa-long-arrow-right"></i>
+                      </a>
+                    </div>  
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <img src="./images/Mask Group -2.png" class="img-fluid" alt="blog-post">
-                  <div class="card blog-card">
-                    <div class="card-body p-md-3">
-                      <div class="d-md-flex bd-highlight">
-                        <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
-                        </div>
-                        <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
-                          <span class="text-muted">May 21, 2021</span>
-                        </div>
-                        <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                          <span>Share : 
-                            <i class="fab fa-linkedin-in text-white blog-social-li-icon"></i>
-                            <i class="fab fa-facebook-f text-white blog-social-fb-icon"></i>
-                            <i class="fab fa-tumblr text-white" style="background-color: #1DA1F2"></i>
-                          </span>
-                        </div>
-                      </div>
-                      <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                      <p class="card-text p-md-2">
-                        <span>Lorem ipsum, or lipsum as it is sometimes </span>
-                        <span>known, is dummy text used in laying out print,</span>
-                        <span>
-                          graphic or web designs. The passage is
-                        </span>
-                        <span>
-                          attributed to an unknown typesetter in the 15th century who is thought to have.
-                        </span>
-                      </p>
-                      <div class="blog-card-button">
-                        <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
-                          Read More <i class="fal fa-long-arrow-right"></i>
-                        </a>
-                      </div>  
-                    </div>
-                  </div>
-                </div>   
               </div>
-            </div>
-            <div class="row g-0 blog-details-card-bottom-btn">
               <div class="col-md-6">
-                <a href="#" class="btn border-0 btn mt-1 w-50 ">
-                  <i class="fal fa-long-arrow-left pe-3"></i>
-                  Read More
-                </a>
-              </div>
-              <div class="row col-md-6 d-md-flex justify-content-md-end">
-                <a href="#" class="btn border-0 btn mt-1 w-50 ">
-                  Read More <i class="fal fa-long-arrow-right ps-3"></i>
-                </a>
-              </div>
+                <img src="./images/Mask Group -2.png" class="img-fluid" alt="blog-post">
+                <div class="card blog-card">
+                  <div class="card-body p-md-3">
+                    <div class="d-md-flex bd-highlight">
+                      <div class="bd-highlight">
+                        <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                      </div>
+                      <div class="p-md-2 bd-highlight">
+                        <strong class="poppins-semibolds">Jhon Due</strong>
+                        <span class="text-muted">May 21, 2021</span>
+                      </div>
+                      <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
+                        <span class="poppins-medium">Share : 
+                          <i class="fab fa-linkedin-in text-white blog-social-li-icon"></i>
+                          <i class="fab fa-facebook-f text-white blog-social-fb-icon"></i>
+                          <i class="fab fa-tumblr text-white" style="background-color: #1DA1F2"></i>
+                        </span>
+                      </div>
+                    </div>
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
+                      <span>Lorem ipsum, or lipsum as it is sometimes </span>
+                      <span>known, is dummy text used in laying out print,</span>
+                      <span>
+                        graphic or web designs. The passage is
+                      </span>
+                      <span>
+                        attributed to an unknown typesetter in the 15th century who is thought to have.
+                      </span>
+                    </p>
+                    <div class="blog-card-button poppins-semibolds">
+                      <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
+                        Read More <i class="fal fa-long-arrow-right"></i>
+                      </a>
+                    </div>  
+                  </div>
+                </div>
+              </div>   
+            </div>
+          </div>
+          <div class="row g-0 blog-details-card-bottom-btn">
+            <div class="col-md-6 poppins-semibolds">
+              <a href="#" class="btn border-0 btn mt-1 w-50 ">
+                <i class="fal fa-long-arrow-left pe-3"></i>
+                Read More
+              </a>
+            </div>
+            <div class="row g-0 col-md-6 d-md-flex justify-content-md-end poppins-semibolds">
+              <a href="#" class="btn border-0 btn mt-1 w-50 ">
+                Read More <i class="fal fa-long-arrow-right ps-3"></i>
+              </a>
             </div>
           </div>
         </div>
-        <img src="./images/team-bg.png" class="img-fluid blog-details-card-bg-image">
       </div>
-    </div>  
+      <img src="./images/team-bg.png" class="img-fluid blog-details-card-bg-image">
+   
+      <!-- Subscribe Form -->
+      <div class="container g-0 blog-details-subscriber">
+        <div class="row g-0">
+          <div class="col-md-10 mx-auto">
+            <h5 class="text-center">Subscribe blogs for latest updates</h5>
+            <h1 class="mt-3"><span class="heading-text">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 mx-md-auto">
+            <form class="row g-0">
+              <div class="col-12 col-md-8 col-lg-8 field-input">
+                <span>Email address</span>
+                <i class="fal fa-paper-plane plan-form-field"></i>
+                <input type="email" class="form-control" placeholder="hello@company.com">
+              </div>
+              <div class="col-12 text-center col-md-4 col-lg-4 mt-sm-5 mt-md-4 mt-md-0">
+                <a href="#" class="btn btn-border-buttom text-decoration-none button-hover text-white-button text-center mb-3 mt-2 mt-md-0">
+                  <span class="button-text">Subscribe Now</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+                </a>
+              </div>
+            </form>
+            <p class="poppins-regular text-muted input-field-text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer> 
+      <div class="container">
+        <hr class="mx-auto footer-hr">        
+        <div class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="images/header-logo.svg" class="footer-logo mt-3" alt="footer-logo">
+          </div>
+          <div class="col-md-5 text-md-end">
+            <ul class="list-inline social-link pe-3">
+              <span class='font-weight-bold footer-font-semiBold'>Follow Us:</span>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+              <li  class="list-inline-item mr-0">  
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-tumblr"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+               <i class="fab fa-youtube"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-behance"></i>
+              </li> 
+            </ul>  
+            <div class='me-3'>
+              <div class='text-justify'>
+                <span class="footer-contact footer-font-semiBold">Say Hello:</span>
+                <span class="footer-contact-text fw-normal">info@appsimpact.com<br>
+                  <spam class="">Ph: +0731 800 578 1250</spam><br>
+                  <spam class="">Ph: +0731 800 578 1250</spam>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 fw-normal footer-font-medium">
+        <div class="row">
+          <div class="col-md-1 text-center">
+          </div> 
+          <div class="col-md-6">
+            <ul class="list-inline footer-page-link">
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">About Us</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Careers</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md-5">
+            <ul class="list-inline">
+              <li class="list-inline-imte footer-rights">
+                <span>
+                  © 2021 AppsImpact Technologies - All rights Reserved
+                </span>  
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </footer>
   </body>
 
 

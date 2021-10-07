@@ -16,6 +16,11 @@
   </head>
   <body>
 
+    <div>
+      <img src="./images/gradient.png" class="gradient-img" >
+    </div>
+
+    <!-- Header Desktop View-->
     <header class="header">  
       <div class="container mt-3 ai-navbar" id="navbar-hide">
         <div class="row">
@@ -27,7 +32,7 @@
           <div class="col-6">
             <ul class="nav mb-2 mb-lg-0 mt-3 justify-content-end">
               <li class="nav-item mobile-hide">
-                <a class="nav-link text-dark" aria-current="page" href="#">
+                <a class="nav-link text-dark" aria-current="page" href="index.html">
                   <span class='nav-link-active'>
                     AppsImpact
                   </span>  
@@ -37,7 +42,7 @@
                 <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item mobile-hide">
-                <a class="nav-link text-dark" href="#">Blog</a>
+                <a class="nav-link text-dark" href="blogs.html">Blog</a>
               </li>
               <li class="nav-item mobile-hide">
                 <a class="nav-link text-dark" href="contact.html">Contact</a>
@@ -55,43 +60,47 @@
 
       <!-- Full Screen Sidebar -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header sidebar-navbar">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <a class="navbar-brand" href="#">
-                  <img src="./images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
-                </a>
-              </div>
-              <div class="col-6">
-                <ul class="nav justify-content-end nav-sidebar-font">
-                  <li class="nav-item d-lg-none">
+        <div style="height: 5000px; overflow: auto;">  
+          <div class="offcanvas-header sidebar-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a class="navbar-brand" href="#">
+                    <img src="./images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <ul class="nav justify-content-end d-lg-none">
+                    <li class="nav-item">
                     <a class="nav-link" href="#">
                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="#">
-                      <span class='nav-link-active'>
-                        AppsImpact
-                      </span>  
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark nav-sidebar-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark nav-sidebar-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark nav-sidebar-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item mobile-hide">
-                    <a class="nav-link" href="#">
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </a>
-                  </li>
-                </ul>
+                  </ul>
+                  <ul class="nav justify-content-lg-end nav-sidebar-font">
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="index.html">
+                        <span class='nav-link-active'>
+                          AppsImpact
+                        </span>  
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mobile-hide">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -122,20 +131,21 @@
       <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>     
       <i class="fal fa-long-arrow-up" id="right-arrow" onclick="topFunction()" style="display: none;"></i>
     </div> 
-    <div class="container blog-header-section">
+
+    <div class="container blog-header-section mt-lg-5">
       <div class="row">
         <div class="col-md-10 mx-auto">
-          <h1>Featured <span class="heading-text">Blogs</span></h1>
+          <h2 class="mb-md-4">Featured <span class="heading-text">Blogs</span></h2>
           <div class="blog-image">
             <img src="./images/Mask Group 15.png" class="img-fluid" alt="Blog bg">
           </div>
           <div class="top-image-card">
             <div class="card shadow p-md-4">
               <div class="card-body">
-                <h6 class="card-title">Premium Blog</h6>
+                <h4 class="card-title fs-6 poppins-regular text-uppercase">Premium Blog</h4>
                 <h2 class="card-subtitle blog-card-sub-title mb-2 fw-bold">AR/VR Technology Online Information Session</h2>
-                <p class="card-text blog-card-txt fw-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                <a href="#" class="btn border-0 card-link ps-0 fw-bold">Read more 
+                <h6 class="card-text blog-card-txt fw-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</h6>
+                <a href="#" class="btn border-0 card-link ps-0 fw-bold poppins-semibolds">Read more 
                   <i class="fal fa-long-arrow-right ps-2 fa-lg"></i>
                 </a>
               </div>
@@ -149,7 +159,7 @@
       <div class="container mb-5">
         <div class="row g-0">
           <div class="col-md-10 mx-auto">
-            <h1 class="blog-card-title ms-2">All <span class="heading-text">posts</span></h1>
+            <h2 class="blog-card-title mb-md-5 ms-2">All <span class="heading-text">posts</span></h2>
             <div class="row m-0">
               <div class="col-md-6">
                 <img src="./images/Mask Group 9.png" class="img-fluid blog-image-mobile" alt="blog-post">
@@ -157,22 +167,22 @@
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 mt-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted fs-small">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -182,7 +192,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -196,22 +206,22 @@
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -221,7 +231,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -230,27 +240,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Mask Group -1.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Mask Group -1.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -260,7 +270,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -269,26 +279,26 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Mask Group -3.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Mask Group -3.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
                     <p class="card-text p-2">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
@@ -299,7 +309,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -308,27 +318,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Group 1447.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Group 1447.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -338,7 +348,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -347,27 +357,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Mask Group -4.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Mask Group -4.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -377,7 +387,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -386,27 +396,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Mask Group -5.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Mask Group -5.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -416,7 +426,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -425,27 +435,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Group -8.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Group -8.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                       <div class="bd-highlight">
-                        <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                        <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                       </div>
                       <div class="p-md-2 bd-highlight">
-                        <strong>Jhon Due</strong>
+                        <strong class="poppins-semibolds">Jhon Due</strong>
                         <span class="text-muted">May 21, 2021</span>
                       </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary "></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -455,7 +465,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -464,27 +474,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Mask Group -6.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Mask Group -6.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -494,7 +504,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -503,27 +513,27 @@
                 </div>
               </div>
               <div class="col-md-6 card-margin">
-                <img src="./images/Mask Group -7.png" class="img-fluid posts-image" alt="blog-post">
+                <img src="./images/Mask Group -7.png" class="img-fluid posts-image blog-post-top-margin" alt="blog-post">
                 <div class="card blog-card">
                   <div class="card-body p-md-3">
                     <div class="d-md-flex bd-highlight">
                         <div class="bd-highlight">
-                          <img src="./images/Countries.svg" class="  pt-md-2 card-avatar" alt="Post Card">
+                          <img src="./images/Countries.svg" class="  mt-lg-3 card-avatar" alt="Post Card">
                         </div>
                         <div class="p-md-2 bd-highlight">
-                          <strong>Jhon Due</strong>
+                          <strong class="poppins-semibolds">Jhon Due</strong>
                           <span class="text-muted">May 21, 2021</span>
                         </div>
                       <div class="pt-md-2 w-100 flex-shrink-1 text-md-end bd-highlight">
-                        <span>Share : 
+                        <span class="poppins-medium">Share : 
                           <i class="fab fa-linkedin-in text-white bg-primary"></i>
                           <i class="fab fa-facebook-f text-white bg-primary"></i>
                           <i class="fab fa-tumblr text-white bg-primary"></i>
                         </span>
                       </div>
                     </div>
-                    <h4 class="card-title text-start mt-1">We Can't Help But Fall In Love With HubSpot.</h4>
-                    <p class="card-text p-md-2">
+                    <h4 class="card-title text-start mt-1 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="card-text p-md-2 poppins-regular">
                       <span>Lorem ipsum, or lipsum as it is sometimes </span>
                       <span>known, is dummy text used in laying out print,</span>
                       <span>
@@ -533,7 +543,7 @@
                         attributed to an unknown typesetter in the 15th century who is thought to have.
                       </span>
                     </p>
-                    <div class="blog-card-button">
+                    <div class="blog-card-button poppins-semibolds">
                       <a href="#" class="btn border-0 btn mt-1 w-50 fw-bold">
                         Read More <i class="fal fa-long-arrow-right"></i>
                       </a>
@@ -544,7 +554,7 @@
             </div>  
           </div>
         </div>
-        <div class="row g-0 blog-card-buttom-btn">
+        <div class="row g-0 blog-card-buttom-btn d-sm-none d-md-flex">
           <div class="col-md-6">
             <a href="#" class="btn border-0 btn mt-1 w-50 ">
               <i class="fal fa-long-arrow-left pe-3"></i>
@@ -560,6 +570,125 @@
       </div>
       <img src="./images/team-bg.png" class="img-fluid blog-card-image">
     </div>
+
+    <div class="container blog-work-with-pro-team">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="team-member-text">
+            <h5 class="mt-5">Work with pro team</h5>
+            <h1 class="fw-bold mt-3">
+              <span class="heading-text">Would you</span> like to have a professional<span class="heading-text"> project? Lets talk</span> about it!  
+            </h1>
+            <a href="#" class="btn border text-decoration-none button-hover text-center">
+              <span class="button-text">Get quotes</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+            </a>
+            <p class="mt-4"><a href="#" class="text-dark"> Info@appsimpact.com</a></p>
+            <p class=" ms-2">or</p>
+            <p class="">+919770233163</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+      <!-- Subscribe Form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h5 class="text-center">Subscribe blogs for latest updates</h5>
+          <h1 class="mt-3"><span class="heading-text">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 mx-md-auto">
+          <form class="row g-0">
+            <div class="col-12 col-md-8 col-lg-8 field-input">
+              <span>Email address</span>
+              <i class="fal fa-paper-plane plan-form-field"></i>
+              <input type="email" class="form-control" placeholder="hello@company.com">
+            </div>
+            <div class="col-12 text-center col-md-4 col-lg-4 mt-sm-5 mt-md-4 mt-md-0">
+              <a href="#" class="btn btn-border-buttom text-decoration-none button-hover text-white-button text-center mb-3 mt-2 mt-md-0">
+                <span class="button-text">Subscribe Now</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+              </a>
+            </div>
+          </form>
+          <p class="poppins-regular text-muted input-field-text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer> 
+      <div class="container">
+        <hr class="mx-auto footer-hr">        
+        <div class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="images/header-logo.svg" class="footer-logo mt-3" alt="footer-logo">
+          </div>
+          <div class="col-md-5 text-md-end">
+            <ul class="list-inline social-link pe-3">
+              <span class='font-weight-bold footer-font-semiBold'>Follow Us:</span>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+              <li  class="list-inline-item mr-0">  
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-tumblr"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+               <i class="fab fa-youtube"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-behance"></i>
+              </li> 
+            </ul>  
+            <div class='me-3'>
+              <div class='text-justify'>
+                <span class="footer-contact footer-font-semiBold">Say Hello:</span>
+                <span class="footer-contact-text fw-normal">info@appsimpact.com<br>
+                  <spam class="">Ph: +0731 800 578 1250</spam><br>
+                  <spam class="">Ph: +0731 800 578 1250</spam>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 fw-normal footer-font-medium">
+        <div class="row">
+          <div class="col-md-1 text-center">
+          </div> 
+          <div class="col-md-6">
+            <ul class="list-inline footer-page-link">
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">About Us</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Careers</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md-5">
+            <ul class="list-inline">
+              <li class="list-inline-imte footer-rights">
+                <span>
+                  © 2021 AppsImpact Technologies - All rights Reserved
+                </span>  
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </footer>
 
   </body>
 

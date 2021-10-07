@@ -15,49 +15,169 @@
 
   </head>
   <body class="overflow-auto">
-    <div class="container-fluid">
+
+    <div>
+      <img src="./images/gradient.png" class="gradient-img" >
+    </div>
+
+    <!-- Header Desktop View-->
+    <header class="header">  
+      <div class="container mt-3 ai-navbar" id="navbar-hide">
+        <div class="row">
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="./images/header-logo.svg" class="img-responsive header-logo"  width="50%" height="73px" alt="header-logo">
+            </a>
+          </div>
+          <div class="col-6">
+            <ul class="nav mb-2 mb-lg-0 mt-3 justify-content-end">
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" aria-current="page" href="index.html">
+                  <span class='nav-link-active'>
+                    AppsImpact
+                  </span>  
+                </a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="blogs.html">Blog</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark">
+                  <i class="fa fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                  ></i>
+                </a>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Screen Sidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div style="height: 5000px; overflow: auto;">
+          <div class="offcanvas-header sidebar-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a class="navbar-brand" href="#">
+                    <img src="./images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <ul class="nav justify-content-end d-lg-none">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </a>
+                  </ul>
+                  <ul class="nav justify-content-lg-end nav-sidebar-font">
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="index.html">
+                        <span class='nav-link-active'>
+                          AppsImpact
+                        </span>  
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mobile-hide">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+    <!-- Sidebar -->
+    <div class="col-md-1 d-md-flex justify-content-md-start left-sidebar logo">
+      <img src="./images/Group 1184.png" class="sidebar-logo mb-4" id="side-Logo" style="display: none;">
+      <ul class="nav flex-column position-sticky pt-5" id="sidebar-social-link">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facebook</a>
+        </li> 
+        <li class="nav-item">
+          <i class="fal fa-long-arrow-up sidebar-arrow"></i>
+        </li>
+      </ul>
+      <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>     
+      <i class="fal fa-long-arrow-up" id="right-arrow" onclick="topFunction()" style="display: none;"></i>
+    </div> 
+
+    <div class="container-fluid mt-md-5">
       <div class="container g-0">
         <div class="row g-0">
           <div class="col-md-10 mx-md-auto">
-            <h1><strong class="fw-bold">Ontime -</strong>Unlock Your Team Perfomance</h1>
+            <div class="d-flex-row">
+              <h2><strong class="fw-bold">Ontime</strong> <span class="poppins-medium fw-normal">-Unlock Your Team Perfomance 
+              </span> </h2>
+            </div>
             <img src="./images/portfolio-details-1.png" class="img-fluid portfolio-detail-header-img">
             <div class="col-md-10 mx-md-auto">
               <div class="card portfolio-detail-card p-md-1">
                 <div class="card-body">
                   <div class="card-title">
-                    <h1 class="fw-bold">Ontime</h1>
-                    <h6>- Unlock Your Team Performance</h6>
+                    <h2 class="fw-bold">Ontime</h2>
+                    <span class="poppins-medium fs-2">-Unlock Your Team Performance</span>
                   </div>
                   <div class="card-text">
-                    <p>
+                    <p class="poppins-regular">
                       On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                     <img src="./images/portfolio-details-2.png" class="img-fluid">
-                    <p class="mt-2">
+                    <p class="mt-2 poppins-regular">
                       On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
                     <img src="./images/portfolio-details-3.png" class="img-fluid mt-md-2">
-                    <h5 class="mt-3">We Can't Help But Fall In Love With HubSpot.</h5>
-                    <p>
+                    <h4 class="mt-3 fs-5">We Can't Help But Fall In Love With HubSpot.</h4>
+                    <p class="poppins-regular">
                       On February 28th we were in Munich, at Google HQ talking about MVP's, the history of design and how it evolved and how to handle quality assurance with large projects. As always our goal was to show things that seem obvious, but are usually overlooked. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </p>
                     <img src="./images/portfolio-details-4.png" class="img-fluid">
                     <div class="row mx-md-auto">
                       <div class="col-md-5 mt-4">
                         <Blockquote>
-                          <h1 class="fw-bold">Technology</h1>
-                          <p class="mb-0 mt-4">Android</p>
-                          <p class="mb-0">ios</p>
-                          <p class="mb-0">MySql</p>
-                          <p class="mb-0">PHP</p>
+                          <h2 class="fw-bold">Technology</h2>
+                          <p class="mb-0 mt-4 poppins-medium">Android</p>
+                          <p class="mb-0 poppins-medium">ios</p>
+                          <p class="mb-0 poppins-medium">MySql</p>
+                          <p class="mb-0 poppins-medium">PHP</p>
                         </Blockquote>
                       </div>
                       <div class="col-md-1"></div>
                       <div class="col-md-4 mt-4">
-                        <h1 class="fw-bold">Highlihts</h1>
-                        <p class="mb-0 mt-4">Cloud Storage</p>
-                        <p class="mb-0">Upload photos and videos</p>
-                        <p class="mb-0 ">Submit anonymous</p>
+                        <h2 class="fw-bold">Highlihts</h2>
+                        <p class="mb-0 mt-4 poppins-medium">Cloud Storage</p>
+                        <p class="mb-0 poppins-medium">Upload photos and videos</p>
+                        <p class="mb-0 poppins-medium">Submit anonymous</p>
                       </div>
                     </div>
                   </div>
@@ -68,7 +188,127 @@
         </div>
       </div>
       <img src="./images/team-bg.png" class="img-fluid portfolio-detail-bg-img">
+    </div>
+
+    <div class="container portfolio-work-with-pro-team">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="team-member-text">
+            <h5 class="mt-5">Work with pro team</h5>
+            <h1 class="fw-bold mt-3">
+              <span class="heading-text">Would you</span> like to have a professional<span class="heading-text"> project? Lets talk</span> about it!  
+            </h1>
+            <a href="#" class="btn border text-decoration-none button-hover text-center">
+              <span class="button-text">Get quotes</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+            </a>
+            <p class="mt-4"><a href="#" class="text-dark"> Info@appsimpact.com</a></p>
+            <p class=" ms-2">or</p>
+            <p class="">+919770233163</p>
+          </div>
+        </div>
+      </div>
     </div>  
+
+      <!-- Subscribe Form -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <h5 class="text-center">Subscribe blogs for latest updates</h5>
+          <h1 class="mt-3"><span class="heading-text">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
+        </div>
+        <div class="col-md-10 col-lg-8 mx-md-auto">
+          <form class="row g-0">
+            <div class="col-12 col-md-8 col-lg-8 field-input">
+              <span>Email address</span>
+              <i class="fal fa-paper-plane plan-form-field"></i>
+              <input type="email" class="form-control" placeholder="hello@company.com">
+            </div>
+            <div class="col-12 text-center col-md-4 col-lg-4 mt-sm-5 mt-md-4 mt-md-0">
+              <a href="#" class="btn btn-border-buttom text-decoration-none button-hover text-white-button text-center mb-3 mt-2 mt-md-0">
+                <span class="button-text">Subscribe Now</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+              </a>
+            </div>
+          </form>
+          <p class="poppins-regular text-muted input-field-text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+        </div>
+      </div>
+    </div> 
+
+      <!-- Footer Section -->
+    <footer> 
+      <div class="container">
+        <hr class="mx-auto footer-hr">        
+        <div class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="images/header-logo.svg" class="footer-logo mt-3" alt="footer-logo">
+          </div>
+          <div class="col-md-5 text-md-end">
+            <ul class="list-inline social-link pe-3">
+              <span class='font-weight-bold footer-font-semiBold'>Follow Us:</span>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+              <li  class="list-inline-item mr-0">  
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-tumblr"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+               <i class="fab fa-youtube"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-behance"></i>
+              </li> 
+            </ul>  
+            <div class='me-3'>
+              <div class='text-justify'>
+                <span class="footer-contact footer-font-semiBold">Say Hello:</span>
+                <span class="footer-contact-text fw-normal">info@appsimpact.com<br>
+                  <spam class="">Ph: +0731 800 578 1250</spam><br>
+                  <spam class="">Ph: +0731 800 578 1250</spam>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 fw-normal footer-font-medium">
+        <div class="row">
+          <div class="col-md-1 text-center">
+          </div> 
+          <div class="col-md-6">
+            <ul class="list-inline footer-page-link">
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">About Us</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Careers</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md-5">
+            <ul class="list-inline">
+              <li class="list-inline-imte footer-rights">
+                <span>
+                  © 2021 AppsImpact Technologies - All rights Reserved
+                </span>  
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </footer>
   </body>
 
 

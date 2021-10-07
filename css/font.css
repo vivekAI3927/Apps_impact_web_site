@@ -57,6 +57,11 @@
   src:  url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
+@font-face{
+  font-family: 'Poppins Bold';
+  src:  url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
 h1{
   font-family: 'Mont Heavy', cursor !important;
   font-weight: 1000;
@@ -65,7 +70,7 @@ h2{
   font-family: Poppins ExtraBold;
   font-weight: 1000;
 }
-h5, .footer-contact-text, .footer-font-medium, .poppins-medium{
+h5, .footer-contact-text, .footer-font-medium, .poppins-medium, .nav-item{
   font-family: Poppins Medium;
 }
 h6, .footer-font-semiBold, .poppins-semibolds{
@@ -77,4 +82,7 @@ h6, .footer-font-semiBold, .poppins-semibolds{
 }
 .poppins-regular-font, .poppins-regular{
   font-family: Poppins Regular;
+}
+h4{
+  font-family: Poppins Bold;
 }

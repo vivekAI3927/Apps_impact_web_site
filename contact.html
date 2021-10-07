@@ -5,39 +5,131 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="./css/AI.css">
     <link rel="stylesheet" type="text/css" href="./css/content.css">
     <link rel="stylesheet" type="text/css" href="./css/subscriber.css">
     <link rel="stylesheet" type="text/css" href="./css/font.css">
-    
+
   </head>
   <body>
-<!--     <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container mt-5">
-        <a class="navbar-brand" href="#">
-          <img src="images/Group 1186.svg" style="height:3rem;">
-        </a> 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartext" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div>
-          <ul class="navbar-nav collapse navbar-collapse mb-lg-0 mb-2 " id="navbartext">
-            <li class="nav-item">
-              <a class="nav-link text-dark" aria-current="page" href="about.html">Appsimpact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="blog.html">blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="contact.html">contact</a>
-            </li>
-          </ul>
-        </div>         
+    <div>
+      <img src="./images/gradient.png" class="gradient-img" >
+    </div>
+
+    <!-- Header Desktop View-->
+    <header class="header">  
+      <div class="container mt-3 ai-navbar" id="navbar-hide">
+        <div class="row">
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="./images/header-logo.svg" class="img-responsive header-logo"  width="50%" height="73px" alt="header-logo">
+            </a>
+          </div>
+          <div class="col-6">
+            <ul class="nav mb-2 mb-lg-0 mt-3 justify-content-end">
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" aria-current="page" href="index.html">
+                  <span class='nav-link-active'>
+                    AppsImpact
+                  </span>  
+                </a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="blogs.html">Blog</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark">
+                  <i class="fa fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                  ></i>
+                </a>
+              </li>
+            </ul>            
+          </div>
+        </div>
       </div>
-    </nav> -->
+
+      <!-- Full Screen Sidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div style="height: 5000px; overflow: auto;">
+          <div class="offcanvas-header sidebar-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a class="navbar-brand" href="#">
+                    <img src="./images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <ul class="nav justify-content-end d-lg-none">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </a>
+                  </ul>
+                  <ul class="nav justify-content-lg-end nav-sidebar-font">
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="index.html">
+                        <span class='nav-link-active'>
+                          AppsImpact
+                        </span>  
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mobile-hide">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ 
+    <!-- Sidebar -->
+    <div class="col-md-1 d-md-flex justify-content-md-start left-sidebar logo">
+      <img src="./images/Group 1184.png" class="sidebar-logo mb-4" id="side-Logo" style="display: none;">
+      <ul class="nav flex-column position-sticky pt-5" id="sidebar-social-link">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facebook</a>
+        </li> 
+        <li class="nav-item">
+          <i class="fal fa-long-arrow-up sidebar-arrow"></i>
+        </li>
+      </ul>
+      <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>     
+      <i class="fal fa-long-arrow-up" id="right-arrow" onclick="topFunction()" style="display: none;"></i>
+    </div> 
+
     <div class="container">
       <div class="row">
         <div class="col-md-1 mt-5 d-none d-lg-block">
@@ -55,21 +147,21 @@
         <div class="col-md-11">
           <div class="row ">
             <div class="col-sm-6 valuefont order-2 order-md-1">
-              <h1 class="fw-bold">Contact <span style="color: #BF00FF;">Us</span></h1>
-              <p class="fw-bold fa-12x">Get in touch with us if you have any further questions and we'll be  happy to help you</p>
+              <h1 class="fw-bold contact-text">Contact <span style="color: #BF00FF;">Us</span></h1>
+              <p class="fa-12x poppins-medium">Get in touch with us if you have any further questions and we'll be  happy to help you</p>
             </div>
             <div class="col-sm-6 pageimg order-1 order-md-2">
-              <img src="./images/Group 832.svg" class="img-fluid text-center">
+              <img src="./images/Character_1_.svg" class="img-fluid text-center">
             </div>
           </div>
           <div class="col-md-6 mt-4">
             <h2 class="fw-bold fa-2x">Contact Form</h2>
-            <input type="name" placeholder="Name" class="form-control mt-4">
-            <input type="email" placeholder="Your e-mail" class="form-control mt-4">
-            <input type="name" placeholder="Contact number" class="form-control mt-4">
+            <input type="name" placeholder="Name" class="form-control poppins-medium mt-4">
+            <input type="email" placeholder="Your e-mail" class="form-control poppins-medium mt-4">
+            <input type="name" placeholder="Contact number" class="form-control poppins-medium mt-4">
             <div class="form-check form-check-inline mt-4">
               <input class="form-check-input ms-2" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-              <label class="form-check-label" for="flexRadioDefault1">
+              <label class="form-check-label ms-2" for="flexRadioDefault1">
               Student
               </label>
             </div>
@@ -80,55 +172,165 @@
               </label>
             </div>
             <div class="form-group mb-3 fw-bold">
-              <textarea class="form-control mt-4" type="text" placeholder="Your message"></textarea>
-              <a href="#" class="btn btn-sm border-dark px-4 mt-4">Submit now<i class="fal fa-long-arrow-right ms-3 p-2"></i></a>
+              <textarea class="form-control poppins-medium mb-5 mt-4" rows="8" type="text" placeholder="Your message"></textarea>
+              <a href="#" class="btn btn-border-buttom text-decoration-none button-hover text-white-button text-center mb-3 mt-md-0">
+                <span class="button-text">Submit Now</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row mt-4">
+      <div class="row mt-4 regi-office-information">
         <div class="col-md-10 offset-md-1">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="fw-bold">Registered office</h2>
-              <p class="fw-bold">APPSIMPACT Technologies Pvt Ltd2nd floor,<br>
+              <h2 class="mb-md-3">Registered office</h2>
+              <p class="poppins-medium">APPSIMPACT Technologies Pvt Ltd2nd floor,<br>
               Plot No.146,Scheme No.54(PU4)<br> Indore,MP,452010</p>
             </div>
             <div class="col-md-6">
-              <h2 class="fw-bold">Call Us</h2>
-              <p class="fw-bold">Ph:+073 800 578 1250<br>
+              <h2 class="mb-md-3">Call Us</h2>
+              <p class="poppins-medium">Ph:+073 800 578 1250<br>
               Mo:+91 977-023-3163</p>
             </div>
           </div>
-          <h2 class="fw-bold mt-4">Reach us</h2>
-          <p class="fw-bold">We are always looking for talented  people,so lets work together</p>
-          <p class="mt-3 fw-bold"><a href="#" class="text-dark"> Info@appsimpact.com</a></p>
+          <h2 class="mt-4">Reach us</h2>
+          <p class="poppins-medium">We are always looking for talented  people,so lets work together</p>
+          <p class="mt-3 poppins-medium"><a href="#" class="text-decoration-none text-dark"> Info@appsimpact.com</a></p>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-md-10 offset-md-1">
-          <div class="row">
-            <div>
-              <h5 class="fw-bold text-center">Subscribe blogs for latest updates</h5>
-              <h1 class="fw-bold"><span style="color: #BF00FF;">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
-            </div>
-            <div class="col-md-10 offset-md-1">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="form-group">
-                    <label class="form-label">Email address</label>
-                    <input type="email" class="form-control" placeholder="Hello@company.com"> 
-                  </div>
-                </div>
-                <div class="col-md-4 mt-4">
-                  <a href="#" class="btn btn-sm border-dark px-4">Subscribe now<i class="fal fa-long-arrow-right ms-3 p-2"></i></a>
-                </div>
-                <small class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry and many more things and so on and this .</small>
+      <img src="./images/team-bg.png" class="img-fluid contact-bg-image-reg">
+
+      <!-- Subscribe Form -->
+      <div class="container g-0 contact-subscriber-field">
+        <div class="row g-0">
+          <div class="col-md-10 mx-auto">
+            <h5 class="text-center">Subscribe blogs for latest updates</h5>
+            <h1 class="mt-3"><span class="heading-text">Subscribe to my newsletter and never miss my </span>upcomming articles</h1>
+          </div>
+          <div class="col-md-10 col-lg-8 mx-md-auto">
+            <form class="row g-0">
+              <div class="col-12 col-md-8 col-lg-8 field-input">
+                <span>Email address</span>
+                <i class="fal fa-paper-plane plan-form-field"></i>
+                <input type="email" class="form-control" placeholder="hello@company.com">
               </div>
-            </div>
+              <div class="col-12 text-center col-md-4 col-lg-4 mt-sm-5 mt-md-4 mt-md-0">
+                <a href="#" class="btn btn-border-buttom text-decoration-none button-hover text-white-button text-center mb-3 mt-2 mt-md-0">
+                  <span class="button-text">Subscribe Now</span><i class="far fa-long-arrow-alt-right ps-4 pe-2 fa-lg"></i>
+                </a>
+              </div>
+            </form>
+            <p class="poppins-regular text-muted input-field-text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
           </div>
         </div>
       </div>
     </div>
+
+        <!-- Footer Section -->
+    <footer> 
+      <div class="container">
+        <hr class="mx-auto footer-hr">        
+        <div class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="images/header-logo.svg" class="footer-logo mt-3" alt="footer-logo">
+          </div>
+          <div class="col-md-5 text-md-end">
+            <ul class="list-inline social-link pe-3">
+              <span class='font-weight-bold footer-font-semiBold'>Follow Us:</span>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+              <li  class="list-inline-item mr-0">  
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-tumblr"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+               <i class="fab fa-youtube"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-behance"></i>
+              </li> 
+            </ul>  
+            <div class='me-3'>
+              <div class='text-justify'>
+                <span class="footer-contact footer-font-semiBold">Say Hello:</span>
+                <span class="footer-contact-text fw-normal">info@appsimpact.com<br>
+                  <spam class="">Ph: +0731 800 578 1250</spam><br>
+                  <spam class="">Ph: +0731 800 578 1250</spam>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 fw-normal footer-font-medium">
+        <div class="row">
+          <div class="col-md-1 text-center">
+          </div> 
+          <div class="col-md-6">
+            <ul class="list-inline footer-page-link">
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">About Us</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Careers</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md-5">
+            <ul class="list-inline">
+              <li class="list-inline-imte footer-rights">
+                <span>
+                  © 2021 AppsImpact Technologies - All rights Reserved
+                </span>  
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </footer>
   </body>
+  <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript">
+    // Sidebar logo
+    var mySidebarLogo = document.getElementById("side-Logo");
+    var myTopButton = document.getElementById("right-arrow");
+    var mySidebatLinks = document.getElementById("sidebar-social-link");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mySidebarLogo.style.display = "block";
+        myTopButton.style.display = "block";
+        mySidebatLinks.style.display = "none";
+      } else {
+        myTopButton.style.display = "none";
+        mySidebarLogo.style.display = "none";
+        mySidebatLinks.style.display = "block";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </html>

@@ -116,6 +116,9 @@
   font-size: 56px;
   line-height: 70px;
 }
+.valuefont > .contact-text{
+  margin-top: 52% !important;
+}
 
 .portfolio-top-header h1{
   margin-top: 30%;
@@ -170,9 +173,9 @@ margin-top: 9%;
 
 .top-image-card{
   position: absolute;
-  top: 272px;
+  top: 274px;
   width: 50%;
-  right: 51px;
+  right: 56px;
   }
 
 .image-card, .blog-card-sub-title {
@@ -236,6 +239,9 @@ margin-top: 9%;
     line-height: 35px;
     margin-top: 1px;
   }  
+  .valuefont > .contact-text{
+    margin-top: 0% !important;
+  }
   .valuefont > p {
     font-size: 12px;
   }
@@ -350,8 +356,8 @@ margin-top: 9%;
   .blog-card{
     margin-top: 150px;
   }
-  .posts-image{
-    margin-top: 10px;
+  .blog-post-top-margin{
+    margin-top: 115px ;
   }
   .blog-card , .card-title {
     font-size: 18px;
@@ -411,6 +417,16 @@ margin-top: 9%;
     width: 100%;
     height: 15rem !important;
   }
+  .blog-details-card-bottom-btn{
+    margin-top: -150px;
+  }
+  .blog-details-card-bottom-btn{
+    display: none;
+  }
+  .blog-work-with-pro-team{
+    margin-top: -200px !important;
+  }
+
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px){
@@ -424,6 +440,10 @@ margin-top: 9%;
   .valuefont > p {
     font-size: 12px;
   }
+   .valuefont > .contact-text{
+    margin-top: 10% !important;
+  }
+
   .pageimg > img {
     width: 100%;
     height: 80%;
@@ -467,6 +487,7 @@ margin-top: 9%;
   .top-image-card > .card{
     border-radius: 20px;
     height: 270px;
+    margin-top: 90px;
   }
 
   .top-image-card{
@@ -557,7 +578,7 @@ margin-top: 9%;
   .blog-image-mobile{
     margin-top: 10px;
   }
-  .posts-image{
+  .blog-post-top-margin{
     margin-top: 100px;
   }
   .blog-card , .card-title {
@@ -619,6 +640,9 @@ margin-top: 9%;
     width: 100%;
     height: 17rem !important;
   }
+  .blog-work-with-pro-team{
+    margin-top: -200px !important;
+  }
 
 }
 
@@ -637,6 +661,10 @@ margin-top: 9%;
     width: 100%;
     height: 80%;
   }
+   .valuefont > .contact-text{
+    margin-top: 15% !important;
+  }
+
   .about-app{
     text-align: center;
   }
@@ -676,6 +704,7 @@ margin-top: 9%;
   .top-image-card > .card{
     border-radius: 20px;
     height: 270px;
+    margin-top: 90px;
   }
 
   .top-image-card{
@@ -760,7 +789,7 @@ margin-top: 9%;
   .blog-card{
     margin-top: 150px;
   }
-  .posts-image{
+  .blog-post-top-margin{
     margin-top: 100px;
   }
   .blog-card , .card-title {
@@ -818,6 +847,9 @@ margin-top: 9%;
     top: 59% !important;
     left: 3%;
   }
+  .blog-work-with-pro-team{
+    margin-top: -200px !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
@@ -838,6 +870,10 @@ margin-top: 9%;
     margin-left: 25px;
     margin-top: 30px;
   }
+   .valuefont > .contact-text{
+    margin-top: 70% !important;
+  }
+
   .left-sidebar>ul>li>a, .sidebar-arrow{
     display: none; 
   }
@@ -893,7 +929,7 @@ margin-top: 9%;
     position: absolute;
     top: 339px;
     width: 75%;
-    right: 96px;
+    right: 31px;
   }
   .image-card{
     position: absolute;
@@ -969,7 +1005,7 @@ margin-top: 9%;
   .blog-card{
     margin-top: 150px;
   }
-  .posts-image{
+  .blog-post-top-margin{
     margin-top: 100px;
   }
   .blog-card , .card-title {
@@ -1030,17 +1066,24 @@ margin-top: 9%;
     top: 57%;
     left: 3%;
   }
+  .blog-work-with-pro-team{
+    margin-top: -350px !important;
+  }
+  .top-image-card > .card {
+    width: 35rem;
+    margin-top: 100px;
+  }
   
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1023px){
-  .valuefont {
+  /*.valuefont {
     text-align: center;
   }
   .valuefont > h1 {
     font-size: 40px;
   }  
+
   .valuefont > p {
     font-size: 12px;
   }
@@ -1048,6 +1091,10 @@ margin-top: 9%;
     width: 100%;
     height: 90%;
   }
+  .valuefont > .contact-text{
+    margin-top: 80% !important;
+  }
+
   .left-sidebar>ul>li>a, .sidebar-arrow{
     display: none; 
   }
@@ -1092,12 +1139,235 @@ margin-top: 9%;
   .image-card, .blog-card-txt{
     padding-top: 12px;
   }
+  .top-image-card > .card {
+    width: 20rem;
+  }*/
 
+ .valuefont {
+    text-align: center;
+  }
+  .valuefont h1{
+    margin-top:30%;
+    font-size: 56px;
+    line-height: 70px;
+  }
+  .valuefont > p {
+    font-size: 12px;
+  }
+  .pageimg > img {
+    width: 100%;
+    height: 100%;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+   .valuefont > .contact-text{
+    margin-top: 70% !important;
+  }
 
+  .left-sidebar>ul>li>a, .sidebar-arrow{
+    display: none; 
+  }
+  .about-app{
+    text-align: center;
+  }
+  .team-member-text {
+    padding: 130px 0px 50px 10px;
+  }
+  .team-member-text > h1 {
+    font-size: 30px;
+  }
+  #side-Logo{
+    display: none !important;
+  }
+  .gradient-img{
+    display: none;
+  }
+
+  .our-notable{
+    padding-top: 100px;
+  }
+
+  .our-notable-client{
+    padding-top: 140px;
+  }
+  .portfolio-top-header h1{
+    margin-top: 30%;
+    text-align: center;
+  }
+
+  .image-card > .card{
+    width: 34.8rem;
+    border-radius: 25px;
+    border: none;
+    height: 15rem;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+
+  .top-image-card > .card{
+    border-radius: 20px;
+    height: 270px;
+  }
+
+  .top-image-card{
+    text-align: center;
+  }
+
+  .top-image-card{
+    position: absolute;
+    top: 339px;
+    width: 75%;
+    right: 124px;
+  }
+  .image-card{
+    position: absolute;
+    right: 105px;
+    top: 120px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .card-margin{
+    margin-top: -190px;
+  }
+
+  .image-card > .card{
+    width: 120rem;
+    border-radius: 25px;
+    border: none;
+    height: 19rem;
+  }
+  .blog-second-card{
+    margin-top: 0px !important;
+  }
+  .blog-card-title{
+    margin-top: 170px;
+    margin-left: 14px;
+  }
+
+  .blog-image{
+    position: relative;
+  }
+  .image-card{
+    margin-top: 55px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+  }
+  .image-card > .card {
+    text-align: center;
+  }  
+  .image-card, .blog-card-sub-title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .image-card, .blog-card-txt{
+    padding-top: 12px;
+  }
+  .posts-image{
+    position: relative;
+  }
+
+  .blog-card{
+    position: relative;
+    bottom: 140px;
+    left: 4px;
+  }
+
+  .blog-card{
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    width: 16rem;
+  }
+  .card-avatar {
+    width: 40px;
+  }
+  .blog-card{
+    margin-top: 150px;
+  }
+  .blog-post-top-margin{
+    margin-top: 100px;
+  }
+  .blog-card , .card-title {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .blog-card-button{
+    position: absolute;
+    bottom: -20px;
+    width: 75%;
+    left: 10%;
+  }
+  .blog-card-button > a {
+    font-size: 12px;
+  }
+
+  .blog-detail-header-image{
+    position: relative;
+  }
+  .blog-detail-card{
+    position: relative;
+    bottom: 75px;
+    left: 0;
+    right: 0;
+  }
+  .blog-details-card-bottom-btn{
+    margin-top: -150px;
+  }
+  .blog-details-card-bg-image{
+    position: relative;
+    bottom: 15px;
+    z-index: -1;
+    bottom: 292px !important;
+  }
+  .blog-card-image {
+    bottom: 235px;
+  }
+  .portfolio-detail-header-img{
+    position: relative;
+  }
+  .portfolio-detail-card{
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    bottom: 50px !important;
+  }
+  .portfolio-detail-bg-img{
+    position: relative;
+    z-index: -1;
+    bottom: 150px !important;
+  }
+  .aboutus-possibility{
+    /*margin-top: 0%;*/
+  }
+  .plan-form-field {
+    position: absolute;
+    top: 57%;
+    left: 3%;
+  }
+  .blog-work-with-pro-team{
+    margin-top: -350px !important;
+  }
+  .top-image-card > .card {
+    width: 47rem;
+    margin-top: 200px;
+  }
+ 
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1339px){
-  .image-card > .card{
+ .image-card > .card{
     width: 36rem;
     border-radius: 25px;
     border: none;
@@ -1131,8 +1401,11 @@ margin-top: 9%;
   .blog-header-section{
     margin-top: 70px;
   }
+  .blog-details-subscriber{
+    margin-top: -300px;
+  }
 
-
+ 
 }
 @media only screen and (min-width: 1440px) and (max-width: 1550px){
   .portfolio-top-header h1{
@@ -1179,6 +1452,9 @@ margin-top: 9%;
   .blog-header-section{
     margin-top: 100px;
   }
+  .blog-details-subscriber{
+    margin-top: -300px;
+  }
 
 }
 
@@ -1186,6 +1462,11 @@ margin-top: 9%;
   .left-sidebar{
     display: none; 
   }
+
+  .contact-bg-image-reg{
+    display: none;
+  }
+
 }
 
 /* Common css for btn */
@@ -1246,9 +1527,9 @@ margin-top: 9%;
   font-size: 35px;
 }
 .blog-detail-bg-image{
-  position: relative;
+  position: absolute;
   z-index: -1;
-  top: 1400px;
+  top: 800px;
   border: 0;
 }
 .blog-detail-header-image{
@@ -1259,9 +1540,6 @@ margin-top: 9%;
   bottom: 75px;
   left: 0;
   right: 0;
-}
-.blog-details-card-bottom-btn{
-  margin-top: -150px;
 }
 .blog-details-card-bg-image{
   position: relative;
@@ -1295,4 +1573,59 @@ margin-top: 9%;
 .video-belief{
   width: 100%;
   height: 32.5rem;
+}
+.blog-details-card-bottom-btn{
+  position: relative;
+  top: -97px;
+}
+.blog-work-with-pro-team{
+  margin-top: -550px;
+}
+.form-check-input:checked{
+  background-color: #BF00FF !important;
+  border-color: #BF00FF !important;
+}
+.contact-subscriber-field{
+  margin-top: 80px;
+}
+.portfolio-work-with-pro-team{
+  margin-top: -410px;
+}
+.regi-office-information{
+  position: relative;
+}
+.contact-bg-image-reg{
+  position: relative;
+  bottom: 180px;
+  z-index: -1;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+  .top-image-card {
+    position: absolute;
+    top: 220px;
+    width: 50%;
+    right: 56px;
+  }
+  .blog-card {
+    border-radius: 15px;
+    border: none;
+    width: 21rem;
+  }
+  .blog-card-button {
+    position: absolute;
+    bottom: -15px;
+    width: 75%;
+    left: 30%;
+  }
+  .blog-card-buttom-btn{
+    position: relative;
+    bottom: 100px;
+  }
+  .left-sidebar, .sidebar-logo {
+    position: fixed;
+    top: 14%;
+    bottom: 0;
+    left: 2%;
+    z-index: 100;
+  }
 }

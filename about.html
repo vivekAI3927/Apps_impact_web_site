@@ -14,6 +14,123 @@
     <link rel="stylesheet" type="text/css" href="./css/font.css">
   </head>
   <body>
+    <div>
+      <img src="./images/gradient.png" class="gradient-img" >
+    </div>
+
+    <!-- Header Desktop View-->
+    <header class="header">  
+      <div class="container mt-3 ai-navbar" id="navbar-hide">
+        <div class="row">
+          <div class="col-6">
+            <a class="navbar-brand" href="#">
+              <img src="./images/header-logo.svg" class="img-responsive header-logo"  width="50%" height="73px" alt="header-logo">
+            </a>
+          </div>
+          <div class="col-6">
+            <ul class="nav mb-2 mb-lg-0 mt-3 justify-content-end">
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" aria-current="page" href="index.html">
+                  <span class='nav-link-active'>
+                    AppsImpact
+                  </span>  
+                </a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="blogs.html">Blog</a>
+              </li>
+              <li class="nav-item mobile-hide">
+                <a class="nav-link text-dark" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark">
+                  <i class="fa fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+                  ></i>
+                </a>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Screen Sidebar -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div style="height: 5000px; overflow: auto;">
+          <div class="offcanvas-header sidebar-navbar">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <a class="navbar-brand" href="#">
+                    <img src="./images/header-logo.svg" class="img-responsive header-sidebar-logo"  width="50%" height="73px" alt="header-logo">
+                  </a>
+                </div>
+                <div class="col-6">
+                  <ul class="nav justify-content-end d-lg-none">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </ul>
+                    <ul class="nav justify-content-lg-end nav-sidebar-font">
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" aria-current="page" href="index.html">
+                        <span class='nav-link-active'>
+                          AppsImpact
+                        </span>  
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark nav-sidebar-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item mobile-hide">
+                      <a class="nav-link" href="#">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="col-md-1 d-md-flex justify-content-md-start left-sidebar logo">
+      <img src="./images/Group 1184.png" class="sidebar-logo mb-4" id="side-Logo" style="display: none;">
+      <ul class="nav flex-column position-sticky pt-5" id="sidebar-social-link">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Instagram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Linkedin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Facebook</a>
+        </li> 
+        <li class="nav-item">
+          <i class="fal fa-long-arrow-up sidebar-arrow"></i>
+        </li>
+      </ul>
+      <i class="fal fa-long-arrow-up sidebar-arrow" id="side-arrow" style="display: none;"></i>     
+      <i class="fal fa-long-arrow-up" id="right-arrow" onclick="topFunction()" style="display: none;"></i>
+    </div> 
+
+
     <div class="container">
       <div class="row">
         <div class="col-md-1 mt-5 d-none d-lg-block">
@@ -174,5 +291,111 @@
         </div>
       </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer> 
+      <div class="container">
+        <hr class="mx-auto footer-hr">        
+        <div class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="images/header-logo.svg" class="footer-logo mt-3" alt="footer-logo">
+          </div>
+          <div class="col-md-5 text-md-end">
+            <ul class="list-inline social-link pe-3">
+              <span class='font-weight-bold footer-font-semiBold'>Follow Us:</span>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-linkedin-in"></i>
+              </li>
+              <li  class="list-inline-item mr-0">  
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-instagram"></i>
+              </li>
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-tumblr"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+               <i class="fab fa-youtube"></i>
+              </li> 
+              <li  class="list-inline-item mr-0">
+                <i class="fab fa-behance"></i>
+              </li> 
+            </ul>  
+            <div class='me-3'>
+              <div class='text-justify'>
+                <span class="footer-contact footer-font-semiBold">Say Hello:</span>
+                <span class="footer-contact-text fw-normal">info@appsimpact.com<br>
+                  <spam class="">Ph: +0731 800 578 1250</spam><br>
+                  <spam class="">Ph: +0731 800 578 1250</spam>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 fw-normal footer-font-medium">
+        <div class="row">
+          <div class="col-md-1 text-center">
+          </div> 
+          <div class="col-md-6">
+            <ul class="list-inline footer-page-link">
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">About Us</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Careers</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Terms & Conditions</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="footer-link text-dark text-decoration-none">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>          
+          <div class="col-md-5">
+            <ul class="list-inline">
+              <li class="list-inline-imte footer-rights">
+                <span>
+                  © 2021 AppsImpact Technologies - All rights Reserved
+                </span>  
+              </li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </footer>
   </body>
+  <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./js/popper.min.js"></script>
+  <script type="text/javascript">
+    // Sidebar logo
+    var mySidebarLogo = document.getElementById("side-Logo");
+    var myTopButton = document.getElementById("right-arrow");
+    var mySidebatLinks = document.getElementById("sidebar-social-link");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mySidebarLogo.style.display = "block";
+        myTopButton.style.display = "block";
+        mySidebatLinks.style.display = "none";
+      } else {
+        myTopButton.style.display = "none";
+        mySidebarLogo.style.display = "none";
+        mySidebatLinks.style.display = "block";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </html>

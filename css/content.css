@@ -1586,7 +1586,7 @@ margin-top: 9%;
   border-color: #BF00FF !important;
 }
 .contact-subscriber-field{
-  margin-top: 80px;
+  margin-top: 130px;
 }
 .portfolio-work-with-pro-team{
   margin-top: -410px;
@@ -1596,7 +1596,7 @@ margin-top: 9%;
 }
 .contact-bg-image-reg{
   position: relative;
-  bottom: 180px;
+  bottom: 700px;
   z-index: -1;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px){
@@ -1627,5 +1627,11 @@ margin-top: 9%;
     bottom: 0;
     left: 2%;
     z-index: 100;
+  }
+
+  .contact-bg-image-reg{
+  position: relative;
+  bottom: 650px;
+  z-index: -1;
   }
 }
